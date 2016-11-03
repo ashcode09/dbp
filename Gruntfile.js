@@ -14,14 +14,32 @@ module.exports = function(grunt) {
         }
       }
     },
+    sass: {
+      dist: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          'css/style.css': 'css/style.scss'
+        }
+      }
+    },
+    cssmin: {
+      css:{
+        src: 'css/style.css',
+        dest: 'css/style.min.css'
+      }
+    },
     watch: {
-      files: ['src/modules/*.js', 'src/main.js'],
-      tasks: ['concat', 'uglify']
+      files: ['src/modules/**/*.js', 'css/modules/**/*.scss'],
+      tasks: ['concat', 'uglify', 'sass', 'cssmin']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['watch']);
