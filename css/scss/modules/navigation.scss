@@ -1,0 +1,28 @@
+.navigation {
+  height: 50px;
+
+  ul {
+    padding: 0px $side-padding;
+    border-bottom: $nav-border-col $nav-border-width solid;
+
+    li {
+      padding: 10px;
+      list-style: none;
+      cursor: pointer;
+      display: inline-block;
+
+      &.left-navigation {
+        &.active-nav {
+          color: blue;
+          border: $nav-border-col $nav-border-width solid;
+          border-bottom: $nav-bg-col $nav-border-width solid;
+          margin-bottom: -$nav-border-width;
+        }
+      }
+
+      &.right-navigation {
+        float: right;
+      }
+    }
+  }
+}

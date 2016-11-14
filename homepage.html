@@ -11,15 +11,13 @@
     <img class="logo">
 </div>
 
-<!-- navigation -->
+<!-- navigation bar -->
 <div class="navigation">
-    <ul class="left-navigation">
-        <li id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id)">UnternehmerPortal</li>
-        <li id="produkteNav" onclick="viewPage('produkte', this.id)">Produkte</li>
-        <li id="preiseNav" onclick="viewPage('preise', this.id)">Preise</li>
-    </ul>
-    <ul class="right-navigation">
-        <li>Registrieren</li>
+    <ul>
+        <li class="left-navigation" id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id)">UnternehmerPortal</li>
+        <li class="left-navigation" id="produkteNav" onclick="viewPage('produkte', this.id)">Produkte</li>
+        <li class="left-navigation" id="preiseNav" onclick="viewPage('preise', this.id)">Preise</li>
+        <li class="right-navigation">Registrieren</li>
     </ul>
 </div>
 
@@ -109,11 +107,6 @@
         </div>
     </div>
 
-
-
-    <div>
-    </div>
-
 </div>
 <!-- end of unternehmerPortal specific view -->
 
@@ -126,9 +119,15 @@
 
 <!-- viewPage('produkte') -->
 <div class="page-view" id="produkte">
-    I am there
+    <div class="intro-module" id="produkteIntroModule">
+
+    </div>
 </div>
 <!-- end of produkte specific view -->
+
+
+
+
 
 <!-- viewPage('preise') -->
 <div class="page-view" id="preise">
