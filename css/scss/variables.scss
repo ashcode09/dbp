@@ -1,8 +1,22 @@
-// Side padding
-$side-padding: 20%;
+// Colours
+$blue-ribbon: #0066ff;
+$dodger-blue: #22AEF3;
+$smalt: #003399;
 
+// General page padding
+$side-padding: 20%;
+$vertical-padding: 0;
+$padding: $vertical-padding $side-padding;
+
+// Body
+$link-col: $dodger-blue;
+$btn-height: 50px;
 
 // Navigation bar
-$nav-border-width: 1px;
+$nav-border-width: 2px;
 $nav-border-col: lightgrey;
 $nav-bg-col: white;
+
+// UnternehmerPortal Intro module
+$up-intro-bg-img: url('http://il6.picdn.net/shutterstock/videos/5206298/thumb/1.jpg');
+$intro-module-padding: 40px;

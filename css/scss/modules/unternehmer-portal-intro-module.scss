@@ -1,10 +1,28 @@
 .unternehmer-portal-view {
   .intro-module {
-    background-color: grey;
+    padding: $padding;
+    padding-top: $intro-module-padding;
+    padding-bottom: $intro-module-padding;
+    background-image: $up-intro-bg-img;
+    background-size: cover;
 
     .search-box {
+      height: 350px - (2*$intro-module-padding);
+      padding: $intro-module-padding;
       background-color: rgba(255, 255, 255, 0.8);
-      width: 50%;
+      width: 40%;
+
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      input {
+        width: 100%;
+
+        &.input-textbox {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }

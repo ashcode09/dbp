@@ -2,6 +2,14 @@
 body {
   margin: 0;
   font-family: arial;
+  color: grey;
+
+  h2 {
+    margin: 0;
+    color: $smalt;
+    font-size: 30px;
+    font-weight: 200;
+  }
 
   ul {
     -webkit-margin-before: 0;
@@ -9,6 +17,24 @@ body {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
+  }
+
+  .btn {
+    background-color: $dodger-blue;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: $btn-height;
+    font-size: 20px;
+  }
+
+  .input-textbox {
+    border: $nav-border-col 1px solid;
+    height: $btn-height;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 20px;
+    color: grey;
   }
 
   .page-view {
