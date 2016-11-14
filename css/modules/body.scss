@@ -1,7 +1,20 @@
-.page-view {
-  display: none;
 
-  &.active-page-view {
-    display: block;
+body {
+  margin: 0;
+
+  //object {
+  //  width: 100%;
+  //}
+  //
+  //embed {
+  //  width: 100%;
+  //}
+
+  .page-view {
+    display: none;
+
+    &.active-page-view {
+      display: block;
+    }
   }
 }

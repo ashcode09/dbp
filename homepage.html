@@ -3,7 +3,7 @@
 <head>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="viewPage('unternehmerPortal', 'unternehmerPortalNav')">
 
 <!-- header -->
 <div class="header">
@@ -24,9 +24,22 @@
 </div>
 
 <!-- viewPage('unternehmerPortal') -->
-<div class="page-view" id="unternehmerPortal">
-    I am here
+<div class="page-view unternehmer-portal-view" id="unternehmerPortal">
+
+    <div class="intro-module">
+        <form class="search-box" action="" method="get">
+            <h2>Große daten. Bessere entscheidungen</h2>
+            <p>Erkennen sie das marktpotenzial ihres unternehmens</p>
+            <input type="text" value="Ihre Branche"/>
+            <input type="submit">Jetzt entdecken</input>
+        </form>
+    </div>
+
 </div>
+
+
+
+
 
 <!-- viewPage('produkte') -->
 <div class="page-view" id="produkte">

@@ -4,7 +4,7 @@ var activePageAndTab = {
 };
 
 function viewPage(idOfPageToView, idOfNavTabClicked) {
-    // 
+    // view page and make tab active
     addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav')
     addClassById(idOfPageToView, 'activePageView', 'active-page-view');
 };
