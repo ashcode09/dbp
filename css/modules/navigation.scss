@@ -1,12 +1,22 @@
 .navigation {
-  background-color: red;
-  color: blue;
-}
+  height: 50px;
 
-.something {
-  color: white;
-}
+  li {
+    padding: 10px;
+    list-style: none;
+  }
+  ul.left-navigation {
+    li {
+      float: left;
 
-.another-thing {
-  color: black;
+      &.active-nav {
+        color: blue;
+      }
+    }
+  }
+  ul.right-navigation {
+    li {
+      float: right;
+    }
+  }
 }

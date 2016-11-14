@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+
+    <img class="logo">
+</div>
+
+<!-- navigation -->
+<div class="navigation">
+    <ul class="left-navigation">
+        <li id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id)">UnternehmerPortal</li>
+        <li id="produkteNav" onclick="viewPage('produkte', this.id)">Produkte</li>
+        <li id="preiseNav" onclick="viewPage('preise', this.id)">Preise</li>
+    </ul>
+    <ul class="right-navigation">
+        <li>Registrieren</li>
+    </ul>
+</div>
+
+<!-- viewPage('unternehmerPortal') -->
+<div class="page-view" id="unternehmerPortal">
+    I am here
+</div>
+
+<!-- viewPage('produkte') -->
+<div class="page-view" id="produkte">
+    I am there
+</div>
+
+<!-- viewPage('preise') -->
+<div class="page-view" id="preise">
+    I am everywhere
+</div>
+
+<script src="src/main.js"></script>
+</body>
+</html>
