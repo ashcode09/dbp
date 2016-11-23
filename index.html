@@ -14,9 +14,15 @@
 <!-- navigation bar -->
 <div class="navigation">
     <ul>
-        <li class="left-navigation" id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id)">UnternehmerPortal</li>
-        <li class="left-navigation" id="produkteNav" onclick="viewPage('produkte', this.id)">Produkte</li>
-        <li class="left-navigation" id="preiseNav" onclick="viewPage('preise', this.id)">Preise</li>
+        <li class="left-navigation" id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id)">
+            <span>Start</span>
+        </li>
+        <li class="left-navigation" id="anwendungenNav" onclick="viewPage('anwendungen', this.id)">
+            <span>Anwendungen</span>
+        </li>
+        <li class="left-navigation" id="tarifeNav" onclick="viewPage('tarife', this.id)">
+            <span>Tarife</span>
+        </li>
         <li class="right-navigation">Registrieren</li>
     </ul>
 </div>
@@ -27,9 +33,9 @@
     <div class="intro-module" id="unternehmerPortalIntroModule">
         <form action="" method="get">
             <div class="search-box">
-                <h2>Gro&szlig;e daten. Bessere entscheidungen</h2>
-                <p>Erkennen sie das marktpotenzial ihres unternehmens</p>
-                <input type="text" class="input-textbox" value="Ihre Branche"/>
+                <h2>Fundierte Daten. Bessere Entscheidungen.</h2>
+                <p>Erkennen Sie das Potenzial Ihres Unternehmens.</p>
+                <input type="text" class="input-textbox" placeholder="Ihre Branche"/>
                 <input type="submit" class="btn" value="Jetzt entdecken" />
             </div>
         </form>
@@ -37,31 +43,32 @@
 
     <div class="key-features-module" id="unternehmerPortalKeyFeaturesModule">
 
-        <h3>Schluesselvorteile des Unternehmerportals</h3>
-        <figure>
+        <h2>Sechs gute Gründe für das UnternehmerPortal</h2>
+
+        <div class="col-md-4">
             <img src="" />
-            <figcaption>Massgeschneiderte Werkzeuge fuer bestmoegliche Einsicht</figcaption>
-        </figure>
-        <figure>
+            <p>Maßgeschneiderte Anwendungen für zielgenaue Ergebnisse</p>
+        </div>
+        <div>
             <img src="" />
-            <figcaption>Verwenden Sie alle vier Werkzeuge an einem Ort</figcaption>
-        </figure>
-        <figure>
+            <p>Ein Portal – Vier nützliche Anwendungen</p>
+        </div>
+        <div>
             <img src="" />
-            <figcaption>Ein Zugang fuer Alles</figcaption>
-        </figure>
-        <figure>
+            <p>Ein Log-in für alle Anwendungen</p>
+        </div>
+        <div>
             <img src="" />
-            <figcaption>Zugang von Ueberall, Rund um die Uhr</figcaption>
-        </figure>
-        <figure>
+            <p>Für Desktop und Tablet verfügbar – und das rund um die Uhr</p>
+        </div>
+        <div>
             <img src="" />
-            <figcaption>Nirgendwo sonst erhaeltlich in Deutschland</figcaption>
-        </figure>
-        <figure>
+            <p>Exklusiv in Deutschland erhältlich</p>
+        </div>
+        <div>
             <img src="" />
-            <figcaption>Allumfassende Kundenbetreuung</figcaption>
-        </figure>
+            <p>Persönliche und umfassende Kundenbetreuung</p>
+        </div>
 
         <button class="btn">Probieren Sie es aus</button>
     </div>
@@ -116,23 +123,23 @@
 
 
 
-<!-- viewPage('produkte') -->
-<div class="page-view" id="produkte">
-    <div class="intro-module" id="produkteIntroModule">
+<!-- viewPage('anwendungen') -->
+<div class="page-view" id="anwendungen">
+    <div class="intro-module" id="anwendungenIntroModule">
 
     </div>
 </div>
-<!-- end of produkte specific view -->
+<!-- end of anwendungen specific view -->
 
 
 
 
 
-<!-- viewPage('preise') -->
-<div class="page-view" id="preise">
+<!-- viewPage('tarife') -->
+<div class="page-view" id="tarife">
     I am everywhere
 </div>
-<!-- end of preise specific view -->
+<!-- end of tarife specific view -->
 
 
 

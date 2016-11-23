@@ -1,5 +1,11 @@
 .unternehmer-portal-view {
   .key-features-module {
-    background-color: grey;
+    background-color: $rock-blue;
+    color: white;
+    text-align: center;
+
+    h2 {
+      color: white;
+    }
   }
 }

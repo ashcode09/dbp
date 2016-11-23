@@ -17,7 +17,7 @@ body ul {
   -webkit-padding-start: 0;
 }
 body .btn {
-  background-color: #22AEF3;
+  background-color: #2282C1;
   border-radius: 5px;
   color: white;
   border: none;
@@ -44,21 +44,25 @@ body .page-view.active-page-view {
 }
 .navigation ul {
   padding: 0 20%;
-  border-bottom: lightgrey 2px solid;
+  border-bottom: lightgrey 1px solid;
   color: black;
 }
 .navigation ul li {
-  padding: 10px;
+  padding: 15px;
   list-style: none;
   cursor: pointer;
   display: inline-block;
   font-weight: 300;
 }
 .navigation ul li.left-navigation.active-nav {
-  color: #22AEF3;
-  border: lightgrey 2px solid;
-  border-bottom: white 2px solid;
-  margin-bottom: -2px;
+  color: #059CE5;
+  border: lightgrey 1px solid;
+  border-bottom: white 1px solid;
+  margin-bottom: -1px;
+}
+.navigation ul li.left-navigation.active-nav span {
+  border-bottom: #059CE5 3px solid;
+  padding-bottom: 13px;
 }
 .navigation ul li.right-navigation {
   float: right;
@@ -88,7 +92,12 @@ body .page-view.active-page-view {
 }
 
 .unternehmer-portal-view .key-features-module {
-  background-color: grey;
+  background-color: #9FB6CD;
+  color: white;
+  text-align: center;
+}
+.unternehmer-portal-view .key-features-module h2 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
