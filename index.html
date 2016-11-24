@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="viewPage('unternehmerPortal', 'unternehmerPortalNav')">
@@ -187,10 +188,23 @@
 
 
 <!-- viewPage('anwendungen') -->
-<div class="page-view" id="anwendungen">
-    <div class="intro-module" id="anwendungenIntroModule">
+<div class="page-view unternehmer-portal-view" id="anwendungen">
 
+    <div id="anwendungenIntroModule" class="side-nav-module intro-module">
+        <div class="light-txtbox-over-img">
+            <h2>Gewinnen Sie ubergreifende Erkenntnisse zu allen Bereichen Ihres Unternehmens</h2>
+            <p>Die Anwendugen des UnternehmerPortals greifen ineinander und generieren Informationen, die Ihnen eine bessere Entscheidungsgrundlage ermoglichen.</p>
+        </div>
     </div>
+
+    <!-- page '2' tabs -->
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <!-- end page '2' tabs -->
+
 </div>
 <!-- end of anwendungen specific view -->
 
@@ -279,6 +293,9 @@
     FOOTER
 </div>
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="src/main.js"></script>
+
 </body>
 </html>

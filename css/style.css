@@ -114,11 +114,18 @@ body .page-view.active-page-view {
   .unternehmer-portal-view .intro-module .light-txtbox-over-img h2 {
     margin-bottom: 50px;
   }
+  .unternehmer-portal-view .intro-module .light-txtbox-over-img p {
+    font-size: 18px;
+    line-height: 1.3;
+  }
 }
 @media (min-width: 1260px) {
   .unternehmer-portal-view .intro-module {
     padding: 40px 20%;
   }
+}
+.unternehmer-portal-view #anwendungenIntroModule {
+  padding-bottom: 120px;
 }
 
 .unternehmer-portal-view .key-features-module {
