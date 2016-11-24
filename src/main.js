@@ -16,3 +16,8 @@ var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) 
     document.getElementById(idOfElementClicked).classList.add(classToAdd);
     activePageAndTab[lastActiveElement] = idOfElementClicked;
 };
+var modulesToScrollTo = document.getElementsByClassName('side-nav-module');
+
+var scrollToModule = function (idOfModule) {
+    
+}
