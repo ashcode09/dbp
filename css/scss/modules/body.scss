@@ -22,7 +22,9 @@ body {
   .light-txtbox-over-img {
     padding: $light-txtbox-over-img-pdg;
     background-color: rgba(255, 255, 255, 0.9);
-    width: 40%;
+    @media (min-width: $md-screen-width) {
+      width: 40%;
+    }
   }
 
   .btn {

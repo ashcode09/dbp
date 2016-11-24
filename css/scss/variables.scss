@@ -9,9 +9,11 @@ $light-grey: lightgrey;
 $white: white;
 
 // General page padding
-$side-padding: 20%;
-$vertical-padding: 0;
-$padding: $vertical-padding $side-padding;
+$lg-side-padding: 20%;
+$md-side-padding: 10%;
+$vertical-padding: 40px;
+$lg-padding: $vertical-padding $lg-side-padding;
+$md-padding: $vertical-padding $md-side-padding;
 $light-txtbox-over-img-pdg: 20px;
 
 // Body
@@ -46,3 +48,7 @@ $product-container-height: $product-title-height + $product-img-height + $produc
 // Try It Out module
 $tryitout-quotebox-height: 150px;
 $tryitout-module-pdg: 150px;
+
+// Desktop and mobile styling widths
+$lg-screen-width: 1260px;
+$md-screen-width: 960px;
