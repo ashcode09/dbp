@@ -1,0 +1,40 @@
+.unternehmer-portal-view {
+    
+    .container {
+    	&.anwendungen-tabs-module {
+    		margin-top: -84px;
+    	}
+    }
+
+    .anwendungen-tabs-module {
+        ul {
+            width: 100%;
+            background-color: $white;
+            border-top: solid 1px $grey;
+            border-bottom: solid 1px $grey;
+            li {
+                width: 25%;
+                text-align: center;
+                a {
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 0px;
+                    color: $grey;
+                    padding-top: 25px;
+                    padding-bottom: 20px;
+                    border: none;
+                    &:focus, &:active, &:hover {
+                        background-color: $white;
+                        border: none;
+                    }
+                }
+            }
+            li.active {
+                border-bottom: 10px solid $dodger-blue;
+                a {
+                    color: $dodger-blue;
+                }
+            }
+        }
+    }
+}

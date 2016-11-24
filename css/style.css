@@ -125,7 +125,7 @@ body .page-view.active-page-view {
   }
 }
 .unternehmer-portal-view #anwendungenIntroModule {
-  padding-bottom: 120px;
+  padding-bottom: 125px;
 }
 
 .unternehmer-portal-view .key-features-module {
@@ -217,6 +217,39 @@ body .page-view.active-page-view {
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn, .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container body .btn-primary, body .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-primary, .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container body .btn-secondary, body .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
   width: 100%;
+}
+
+.unternehmer-portal-view .container.anwendungen-tabs-module {
+  margin-top: -84px;
+}
+.unternehmer-portal-view .anwendungen-tabs-module ul {
+  width: 100%;
+  background-color: white;
+  border-top: solid 1px #666666;
+  border-bottom: solid 1px #666666;
+}
+.unternehmer-portal-view .anwendungen-tabs-module ul li {
+  width: 25%;
+  text-align: center;
+}
+.unternehmer-portal-view .anwendungen-tabs-module ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0px;
+  color: #666666;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border: none;
+}
+.unternehmer-portal-view .anwendungen-tabs-module ul li a:focus, .unternehmer-portal-view .anwendungen-tabs-module ul li a:active, .unternehmer-portal-view .anwendungen-tabs-module ul li a:hover {
+  background-color: white;
+  border: none;
+}
+.unternehmer-portal-view .anwendungen-tabs-module ul li.active {
+  border-bottom: 10px solid #059CE5;
+}
+.unternehmer-portal-view .anwendungen-tabs-module ul li.active a {
+  color: #059CE5;
 }
 
 .pricing-module {
