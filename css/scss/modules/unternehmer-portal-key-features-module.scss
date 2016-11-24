@@ -1,23 +1,42 @@
 .unternehmer-portal-view {
   .key-features-module {
-    padding: $md-padding;
+
+    padding: 40px 20px;
     background-color: $rock-blue;
     color: white;
     text-align: center;
 
     h2 {
-      color: white;
+      color: $white;
     }
 
     .key-feature {
       display: inline-table;
-      width: 30%;
+      width: 42%;
       padding: 1.5%;
 
       img {
         height: 100px;
       }
     }
+
+    hr {
+      display: block;
+      border-top: 1px solid $white;;
+    }
+
+    @media (min-width: $md-screen-width) {
+      padding: $md-padding;
+
+      .key-feature {
+        width: 30%;
+      }
+
+      hr {
+        display: none;
+      }
+    }
+
     @media (min-width: $lg-screen-width) {
       padding: $lg-padding;
       padding-top: $intro-module-padding;

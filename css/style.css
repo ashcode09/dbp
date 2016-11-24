@@ -122,7 +122,7 @@ body .page-view.active-page-view {
 }
 
 .unternehmer-portal-view .key-features-module {
-  padding: 40px 10%;
+  padding: 40px 20px;
   background-color: #9FB6CD;
   color: white;
   text-align: center;
@@ -132,11 +132,26 @@ body .page-view.active-page-view {
 }
 .unternehmer-portal-view .key-features-module .key-feature {
   display: inline-table;
-  width: 30%;
+  width: 42%;
   padding: 1.5%;
 }
 .unternehmer-portal-view .key-features-module .key-feature img {
   height: 100px;
+}
+.unternehmer-portal-view .key-features-module hr {
+  display: block;
+  border-top: 1px solid white;
+}
+@media (min-width: 960px) {
+  .unternehmer-portal-view .key-features-module {
+    padding: 40px 10%;
+  }
+  .unternehmer-portal-view .key-features-module .key-feature {
+    width: 30%;
+  }
+  .unternehmer-portal-view .key-features-module hr {
+    display: none;
+  }
 }
 @media (min-width: 1260px) {
   .unternehmer-portal-view .key-features-module {
