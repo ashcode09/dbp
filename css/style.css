@@ -1,4 +1,5 @@
 body {
+  max-width: 100%;
   margin: 0;
   font-family: arial;
   color: #666666;
@@ -57,6 +58,7 @@ body .page-view.active-page-view {
 }
 
 .navigation {
+  width: 100%;
   margin-bottom: 5px;
 }
 .navigation ul {
@@ -138,16 +140,17 @@ body .page-view.active-page-view {
   color: white;
 }
 .unternehmer-portal-view .key-features-module .key-feature {
-  display: inline-table;
+  display: inline-block;
   width: 42%;
   padding: 1.5%;
 }
 .unternehmer-portal-view .key-features-module .key-feature img {
   height: 100px;
 }
-.unternehmer-portal-view .key-features-module hr {
-  display: block;
+.unternehmer-portal-view .key-features-module .break {
   border-top: 1px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 @media (min-width: 960px) {
   .unternehmer-portal-view .key-features-module {
@@ -156,7 +159,7 @@ body .page-view.active-page-view {
   .unternehmer-portal-view .key-features-module .key-feature {
     width: 30%;
   }
-  .unternehmer-portal-view .key-features-module hr {
+  .unternehmer-portal-view .key-features-module .break {
     display: none;
   }
 }
@@ -178,7 +181,7 @@ body .page-view.active-page-view {
   margin-top: 25px;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container {
-  display: inline-table;
+  display: inline-block;
   color: white;
   width: 16%;
   margin: 0 1%;
