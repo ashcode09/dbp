@@ -1,6 +1,7 @@
-var activePageAndTab = {
+var activePageAndTabAndSideBarBtn = {
     'activeNavTab': null,
-    'activePageView': null
+    'activePageView': null,
+    'activeSideBarBtn': null
 };
 
 function viewPage(idOfPageToView, idOfNavTabClicked) {
@@ -10,9 +11,9 @@ function viewPage(idOfPageToView, idOfNavTabClicked) {
 };
 
 var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) {
-    if (activePageAndTab[lastActiveElement] != null) {
-        document.getElementById(activePageAndTab[lastActiveElement]).classList.remove(classToAdd);
+    if (activePageAndTabAndSideBarBtn[lastActiveElement] != null) {
+        document.getElementById(activePageAndTabAndSideBarBtn[lastActiveElement]).classList.remove(classToAdd);
     }
     document.getElementById(idOfElementClicked).classList.add(classToAdd);
-    activePageAndTab[lastActiveElement] = idOfElementClicked;
+    activePageAndTabAndSideBarBtn[lastActiveElement] = idOfElementClicked;
 };
