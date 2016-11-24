@@ -1,36 +1,18 @@
 .unternehmer-portal-view {
   .products-module {
-    padding: $lg-padding;
+    padding: 40px 20px;
     padding-top: $intro-module-padding;
     padding-bottom: $intro-module-padding;
     text-align: center;
+
+    .break {
+      border-color: $light-grey;
+    }
 
     .product-box-container {
       margin-top: 25px;
 
       .product-container {
-        display: inline-block;
-        color: $white;
-        width: 16%;
-        margin: 0 1%;
-        padding: $product-topbtm-padding 3%;
-        height: $product-container-height;
-
-        &.planhq-product {
-          background-color: #4F81BD;
-        }
-
-        &.sizeup-product {
-          background-color: #A1ABB3;
-        }
-
-        &.credithq-product {
-          background-color: #33ADE2;
-        }
-
-        &.export-enterprises-product {
-          background-color: #7189B3;
-        }
 
         .title-container {
           height: $product-title-height;
@@ -53,12 +35,58 @@
 
         .btn-container {
           height: $product-btn-height;
+          margin-bottom: 15px;
 
-          .btn {
+          .btn-secondary {
+            border: 1px solid $link-col;
+          }
+        }
+      }
+    }
+
+    @media (min-width: $md-screen-width) {
+      padding: $md-padding;
+      padding-top: $intro-module-padding;
+      padding-bottom: $intro-module-padding;
+      
+      .break {
+        display: none;
+      }
+
+      .product-container {
+        display: inline-block;
+        width: 16%;
+        margin: 0 1%;
+        padding: $product-topbtm-padding 3%;
+        height: $product-container-height;
+
+        &.planhq-product {
+          background-color: #4F81BD;
+        }
+
+        &.sizeup-product {
+          background-color: #A1ABB3;
+        }
+
+        &.credithq-product {
+          background-color: #33ADE2;
+        }
+
+        &.export-enterprises-product {
+          background-color: #7189B3;
+        }
+
+        .btn-container {
+          .btn-secondary {
+            border: none;
             width: 100%;
           }
         }
       }
+    }
+
+    @media (min-width: $lg-screen-width) {
+      padding: $lg-padding;
     }
   }
 }
