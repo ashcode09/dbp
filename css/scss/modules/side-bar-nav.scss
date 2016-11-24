@@ -1,7 +1,6 @@
 .side-bar-nav {
   position: fixed;
   top: 300px;
-  right: 10%;
 
   ul {
     text-align: center;
@@ -21,5 +20,13 @@
         width: $active-sidebarbtn-height;
       }
     }
+  }
+
+  @media (min-width: $md-screen-width) {
+    right: $md-side-padding/2;
+  }
+
+  @media (min-width: $lg-screen-width) {
+    right: $lg-side-padding/2;
   }
 }

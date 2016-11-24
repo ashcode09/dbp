@@ -3,6 +3,8 @@
 
   ul {
     padding: $lg-padding;
+    padding-bottom: 0;
+    padding-top: 0;
     border-bottom: $nav-border-col $nav-border-width solid;
     color: black;
 

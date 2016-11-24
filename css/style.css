@@ -61,6 +61,8 @@ body .page-view.active-page-view {
 }
 .navigation ul {
   padding: 40px 20%;
+  padding-bottom: 0;
+  padding-top: 0;
   border-bottom: lightgrey 1px solid;
   color: black;
 }
@@ -88,12 +90,23 @@ body .page-view.active-page-view {
 .unternehmer-portal-view .intro-module {
   background-image: url("http://il6.picdn.net/shutterstock/videos/5206298/thumb/1.jpg");
   background-size: cover;
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.unternehmer-portal-view .intro-module input {
+  width: 100%;
+}
+.unternehmer-portal-view .intro-module input.input-textbox {
+  margin-bottom: 10px;
 }
 @media (min-width: 960px) {
   .unternehmer-portal-view .intro-module {
     padding: 40px 10%;
     padding-top: 40px;
     padding-bottom: 40px;
+    text-align: left;
   }
   .unternehmer-portal-view .intro-module .light-txtbox-over-img {
     height: 310px;
@@ -101,18 +114,10 @@ body .page-view.active-page-view {
   .unternehmer-portal-view .intro-module .light-txtbox-over-img h2 {
     margin-bottom: 50px;
   }
-  .unternehmer-portal-view .intro-module .light-txtbox-over-img input {
-    width: 100%;
-  }
-  .unternehmer-portal-view .intro-module .light-txtbox-over-img input.input-textbox {
-    margin-bottom: 10px;
-  }
 }
 @media (min-width: 1260px) {
   .unternehmer-portal-view .intro-module {
     padding: 40px 20%;
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 }
 
@@ -225,7 +230,6 @@ body .page-view.active-page-view {
 .side-bar-nav {
   position: fixed;
   top: 300px;
-  right: 10%;
 }
 .side-bar-nav ul {
   text-align: center;
@@ -243,6 +247,16 @@ body .page-view.active-page-view {
   background-color: #2282C1;
   height: 14px;
   width: 14px;
+}
+@media (min-width: 960px) {
+  .side-bar-nav {
+    right: 5%;
+  }
+}
+@media (min-width: 1260px) {
+  .side-bar-nav {
+    right: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

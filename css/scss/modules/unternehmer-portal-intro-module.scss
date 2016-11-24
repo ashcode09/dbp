@@ -2,11 +2,24 @@
   .intro-module {
     background-image: $up-intro-bg-img;
     background-size: cover;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    input {
+      width: 100%;
+
+      &.input-textbox {
+        margin-bottom: 10px;
+      }
+    }
 
     @media (min-width: $md-screen-width) {
       padding: $md-padding;
       padding-top: $intro-module-padding;
       padding-bottom: $intro-module-padding;
+      text-align: left;
 
       .light-txtbox-over-img {
         height: 350px - (2*$light-txtbox-over-img-pdg);
@@ -14,21 +27,11 @@
         h2 {
           margin-bottom: 50px;
         }
-
-        input {
-          width: 100%;
-
-          &.input-textbox {
-            margin-bottom: 10px;
-          }
-        }
       }
     }
 
     @media (min-width: $lg-screen-width) {
       padding: $lg-padding;
-      padding-top: $intro-module-padding;
-      padding-bottom: $intro-module-padding;
     }
 
   }
