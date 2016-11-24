@@ -17,6 +17,9 @@ body ul {
   -webkit-margin-end: 0;
   -webkit-padding-start: 0;
 }
+body .line {
+  width: 100%;
+}
 body .light-txtbox-over-img {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.9);
