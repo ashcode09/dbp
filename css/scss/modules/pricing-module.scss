@@ -1,11 +1,23 @@
 .pricing-module {
   background-color: #F6F5F5;
-  padding: $lg-padding;
+  padding: 40px 20px;
   padding-top: $intro-module-padding;
   padding-bottom: $intro-module-padding;
   text-align: center;
 
   .desc-line {
     margin: 30px 0;
+  }
+
+  @media (min-width: $md-screen-width) {
+    padding: $md-padding;
+    padding-top: $intro-module-padding;
+    padding-bottom: $intro-module-padding;
+  }
+
+  @media (min-width: $lg-screen-width) {
+    padding: $lg-padding;
+    padding-top: $intro-module-padding;
+    padding-bottom: $intro-module-padding;
   }
 }

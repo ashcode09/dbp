@@ -198,7 +198,7 @@ body .page-view.active-page-view {
   height: 125px;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .desc-container {
-  height: 100px;
+  height: 125px;
   font-size: 15px;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container {
@@ -210,6 +210,7 @@ body .page-view.active-page-view {
 }
 @media (min-width: 960px) {
   .unternehmer-portal-view .products-module {
+    color: white;
     padding: 40px 10%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -217,27 +218,27 @@ body .page-view.active-page-view {
   .unternehmer-portal-view .products-module .break {
     display: none;
   }
-  .unternehmer-portal-view .products-module .product-container {
+  .unternehmer-portal-view .products-module .product-box-container .product-container {
     display: inline-block;
     width: 16%;
     margin: 0 1%;
     padding: 40px 3%;
-    height: 350px;
+    height: 375px;
   }
-  .unternehmer-portal-view .products-module .product-container.planhq-product {
+  .unternehmer-portal-view .products-module .product-box-container .product-container.planhq-product {
     background-color: #4F81BD;
   }
-  .unternehmer-portal-view .products-module .product-container.sizeup-product {
+  .unternehmer-portal-view .products-module .product-box-container .product-container.sizeup-product {
     background-color: #A1ABB3;
   }
-  .unternehmer-portal-view .products-module .product-container.credithq-product {
+  .unternehmer-portal-view .products-module .product-box-container .product-container.credithq-product {
     background-color: #33ADE2;
   }
-  .unternehmer-portal-view .products-module .product-container.export-enterprises-product {
+  .unternehmer-portal-view .products-module .product-box-container .product-container.export-enterprises-product {
     background-color: #7189B3;
   }
-  .unternehmer-portal-view .products-module .product-container .btn-container .btn-secondary {
-    border: none;
+  .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
+    border: 1px solid white;
     width: 100%;
   }
 }
@@ -282,13 +283,27 @@ body .page-view.active-page-view {
 
 .pricing-module {
   background-color: #F6F5F5;
-  padding: 40px 20%;
+  padding: 40px 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
 }
 .pricing-module .desc-line {
   margin: 30px 0;
+}
+@media (min-width: 960px) {
+  .pricing-module {
+    padding: 40px 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1260px) {
+  .pricing-module {
+    padding: 40px 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .tryitout-module {
