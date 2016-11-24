@@ -1,0 +1,64 @@
+.unternehmer-portal-view {
+  .products-module {
+    padding: $padding;
+    padding-top: $intro-module-padding;
+    padding-bottom: $intro-module-padding;
+    text-align: center;
+
+    .product-box-container {
+      margin-top: 25px;
+
+      .product-container {
+        display: inline-table;
+        color: $white;
+        width: 16%;
+        margin: 0 1%;
+        padding: $product-topbtm-padding 3%;
+        height: $product-container-height;
+
+        &.planhq-product {
+          background-color: #4F81BD;
+        }
+
+        &.sizeup-product {
+          background-color: #A1ABB3;
+        }
+
+        &.credithq-product {
+          background-color: #33ADE2;
+        }
+
+        &.export-enterprises-product {
+          background-color: #7189B3;
+        }
+
+        .title-container {
+          height: $product-title-height;
+
+          h4 {
+            font-size: 20px;
+            font-weight: 100;
+            margin: 0;
+          }
+        }
+
+        .img-container {
+          height: $product-img-height;
+        }
+
+        .desc-container {
+          height: $product-desc-height;
+          font-size: 15px;
+        }
+
+        .btn-container {
+          height: $product-btn-height;
+
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

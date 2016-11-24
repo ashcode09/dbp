@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: arial;
-  color: grey;
+  color: $grey;
 
   h2 {
     margin: 0;
@@ -20,12 +20,23 @@ body {
   }
 
   .btn {
-    background-color: $curious-blue;
-    border-radius: 5px;
-    color: white;
     border: none;
     height: $btn-height;
+  }
+
+  .btn-primary {
+    @extend .btn;
+    background-color: $curious-blue;
+    border-radius: 5px;
+    color: $white;
     font-size: 20px;
+  }
+
+  .btn-secondary {
+    @extend .btn;
+    background-color: $white;
+    color: $link-col;
+    font-size: 15px;
   }
 
   .input-textbox {

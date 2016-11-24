@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: arial;
-  color: grey;
+  color: #666666;
 }
 body h2 {
   margin: 0;
@@ -16,13 +16,20 @@ body ul {
   -webkit-margin-end: 0;
   -webkit-padding-start: 0;
 }
-body .btn {
+body .btn, body .btn-primary, body .btn-secondary {
+  border: none;
+  height: 50px;
+}
+body .btn-primary {
   background-color: #2282C1;
   border-radius: 5px;
   color: white;
-  border: none;
-  height: 50px;
   font-size: 20px;
+}
+body .btn-secondary {
+  background-color: white;
+  color: #059CE5;
+  font-size: 15px;
 }
 body .input-textbox {
   border: lightgrey 1px solid;
@@ -92,6 +99,9 @@ body .page-view.active-page-view {
 }
 
 .unternehmer-portal-view .key-features-module {
+  padding: 0 20%;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #9FB6CD;
   color: white;
   text-align: center;

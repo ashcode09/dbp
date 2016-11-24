@@ -4,6 +4,9 @@ $dodger-blue: #059CE5;
 $curious-blue: #2282C1;
 $rock-blue: #9FB6CD;
 $smalt: #003399;
+$grey: #666666;
+$light-grey: lightgrey;
+$white: white;
 
 // General page padding
 $side-padding: 20%;
@@ -16,12 +19,20 @@ $btn-height: 50px;
 
 // Navigation bar
 $nav-border-width: 1px;
-$nav-border-col: lightgrey;
-$nav-bg-col: white;
+$nav-border-col: $light-grey;
+$nav-bg-col: $white;
 $li-padding: 15px;
 $active-tab-border-btm-width: 3px;
 
 // UnternehmerPortal Intro module
 $up-intro-bg-img: url('http://il6.picdn.net/shutterstock/videos/5206298/thumb/1.jpg');
 $intro-module-padding: 40px;
+
+// Product module
+$product-topbtm-padding: 40px;
+$product-title-height: 75px;
+$product-img-height: 125px;
+$product-desc-height: 100px;
+$product-btn-height: $btn-height;
+$product-container-height: $product-title-height + $product-img-height + $product-desc-height + $product-btn-height;
 

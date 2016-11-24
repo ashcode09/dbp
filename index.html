@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="viewPage('unternehmerPortal', 'unternehmerPortalNav')">
@@ -30,86 +32,126 @@
 <!-- viewPage('unternehmerPortal') -->
 <div class="page-view unternehmer-portal-view" id="unternehmerPortal">
 
-    <div class="intro-module" id="unternehmerPortalIntroModule">
+    <div id="introModule" class="side-nav-module intro-module">
         <form action="" method="get">
             <div class="search-box">
                 <h2>Fundierte Daten. Bessere Entscheidungen.</h2>
                 <p>Erkennen Sie das Potenzial Ihres Unternehmens.</p>
                 <input type="text" class="input-textbox" placeholder="Ihre Branche"/>
-                <input type="submit" class="btn" value="Jetzt entdecken" />
+                <input type="submit" class="btn-primary" value="Jetzt entdecken" />
             </div>
         </form>
     </div>
 
-    <div class="key-features-module" id="unternehmerPortalKeyFeaturesModule">
+    <div id="keyFeaturesModule" class="side-nav-module key-features-module">
 
         <h2>Sechs gute Gründe für das UnternehmerPortal</h2>
 
-        <div class="col-md-4">
+        <div class="key-feature">
             <img src="" />
             <p>Maßgeschneiderte Anwendungen für zielgenaue Ergebnisse</p>
         </div>
-        <div>
+        <div class="key-feature">
             <img src="" />
             <p>Ein Portal – Vier nützliche Anwendungen</p>
         </div>
-        <div>
+        <div class="key-feature">
             <img src="" />
             <p>Ein Log-in für alle Anwendungen</p>
         </div>
-        <div>
+        <div class="key-feature">
             <img src="" />
             <p>Für Desktop und Tablet verfügbar – und das rund um die Uhr</p>
         </div>
-        <div>
+        <div class="key-feature">
             <img src="" />
             <p>Exklusiv in Deutschland erhältlich</p>
         </div>
-        <div>
+        <div class="key-feature">
             <img src="" />
             <p>Persönliche und umfassende Kundenbetreuung</p>
         </div>
 
-        <button class="btn">Probieren Sie es aus</button>
+        <button class="btn-primary">Probieren Sie es aus</button>
     </div>
 
-    <div class="video-module" id="unternehmerPortalVideoModule">
-        <button>Probieren Sie es aus</button>
+    <div class="side-nav-module video-module" id="videoModule">
+        <video poster="http://il6.picdn.net/shutterstock/videos/5206298/thumb/1.jpg" src="http://www.youtube.com/watch?v=bONeCoik1Ts">
+
+        </video>
     </div>
 
-    <div class="products-module" id="unternehmerPortalProductsModule">
-        <h2>Vier apps um Ihrem Unternehmermen zu helfen</h2>
-        <div class="planhq-product">
-            <h4>Wie planen ich fuer die Zuchunft</h4>
-            <img src="" />
-            <p>PlanHQ hilft Ihnen einen professionellen Geschaeftsplan zu erstellen sowie ihre Finanzielle Lage vorrauszusagen</p>
-            <a href="">
-                <button class="btn">Erfahren Sie mehr</button>
-            </a>
-        </div>
-        <div class="sizeup-product">
-            <h4>Wie schlaegt sich mein Unternehmen?</h4>
-            <img src="" />
-            <p>Sizeup Vergleichen Sie Ihre gesch&auml;ftliche Reichweite mit der Ihrer Wettbewerber</p>
-            <a href="">
-                <button class="btn">Erfahren Sie mehr</button>
-            </a>
-        </div>
-        <div class="credithq-product">
-            <h4>Wer ist ein zuverlaessiger Geschaeftspartner</h4>
-            <img src="" />
-            <p>CreditHQ erlaubt es schnell und einfach die Bonit&auml;t Ihrer Gesch&auml;ftspartner abzufragen</p>
-            <a href="">
-                <button class="btn">Erfahren Sie mehr</button>
-            </a>
-        </div>
-        <div class="export-enterprises-product">
-            <h4>Wie kann ich Geschaefte im Ausland machen?</h4>
-            <img src="" />
-            <p>Export Enterprises gibt Ignen Zugang Aussenhandel Schluesselinformationen und Partnern</p>
-            <a href="">
-                <button class="btn">Erfahren Sie mehr</button>
-            </a>
+    <div class="side-nav-module products-module" id="productsModule">
+        <h2>Vier Anwendungen für bessere Entscheidungen in Ihrem Unternehmen</h2>
+        <div class="product-box-container">
+            <div class="product-container planhq-product">
+                <div class="title-container">
+                    <h4>Vorhaben planen</h4>
+                </div>
+                <div class="img-container">
+                    <img src="" />
+                </div>
+                <div class="desc-container">
+                    <p>Mit PlanHQ erstellen Sie einen professionellen Geschäftsplan zur Realisierung Ihrer Ideen.</p>
+                </div>
+                <div class="btn-container">
+                    <a href="">
+                        <button class="btn-secondary">Erfahren Sie mehr</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="product-container sizeup-product">
+                <div class="title-container">
+                    <h4>Marktpotenziale erkennen</h4>
+                </div>
+                <div class="img-container">
+                    <img src="" />
+                </div>
+                <div class="desc-container">
+                    <p>Mit SizeUp vergleichen Sie Ihr Unternehmen mit denen Ihrer Wettbewerber.</p>
+                </div>
+                <div class="btn-container">
+                    <a href="">
+                        <button class="btn-secondary">Erfahren Sie mehr</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="product-container credithq-product">
+                <div class="title-container">
+                    <h4>Geschäftspartner bewerten</h4>
+                </div>
+                <div class="img-container">
+                    <img src="" />
+                </div>
+                <div class="desc-container">
+                    <p>Mit CreditHQ rufen Sie schnell und einfach die Bonität Ihrer Geschäftspartner ab.</p>
+                </div>
+                <div class="btn-container">
+                    <a href="">
+                        <button class="btn-secondary">Erfahren Sie mehr</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="product-container export-enterprises-product">
+                <div class="title-container">
+                    <h4>Auslandsgeschäft ausbauen</h4>
+                </div>
+                <div class="img-container">
+                    <img src="" />
+                </div>
+                <div class="desc-container">
+                    <p>Mit Export Enterprises lernen Sie Auslandsmärkte und deren Besonderheiten kennen.</p>
+                </div>
+                <div class="btn-container">
+                    <a href="">
+                        <button class="btn-secondary">Erfahren Sie mehr</button>
+                    </a>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -145,20 +187,21 @@
 
 
 
-<div class="promotion-module" id="promotionsModule">
-    <h2>Die Deutsche Bank-Kuden bekommen das volle UnternehmerPortal-Paket kostenlos</h2>
-    <p>Kein DB-Kunde? Sie k&ouml;nnen immer noch alle Apps ab nur &euro;8 monatlich bekommen.</p>
+<div class="side-nav-module promotion-module" id="promotionsModule">
+    <h2>Kunden der Deutschen Bank können das UnternehmerPortal kostenfrei nutzen.</h2>
+    <p>Nichtkunden steht das UnternehmerPortal bereits ab 8 Euro monatlich zur Verfügung.</p>
     <a href="">
-        <button class="btn">Preisstufen</button>
+        <button class="btn-primary">Tarife</button>
     </a>
+    <p>*Voraussetzung ist der Besitz eines Deutsche Bank Geschäfts- oder Firmenkontos.</p>
 </div>
 
-<div class="tryitout-module" id="tryItOutModule">
+<div class="side-nav-module tryitout-module" id="tryItOutModule">
     <div class="quote">
         Unglaublich organisiert und einfach in der handhabung. Ich habe dank UnternehmerMarkt meine Konkurrenten ueberwunden
     </div>
     <a href="">
-        <button class="btn">Probieren Sie es aus</button>
+        <button class="btn-primary">Probieren Sie es aus</button>
     </a>
 </div>
 
