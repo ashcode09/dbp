@@ -12,6 +12,7 @@ $white: white;
 $side-padding: 20%;
 $vertical-padding: 0;
 $padding: $vertical-padding $side-padding;
+$light-txtbox-over-img-pdg: 20px;
 
 // Body
 $link-col: $dodger-blue;
@@ -36,3 +37,6 @@ $product-desc-height: 100px;
 $product-btn-height: $btn-height;
 $product-container-height: $product-title-height + $product-img-height + $product-desc-height + $product-btn-height;
 
+// Try It Out module
+$tryitout-quotebox-height: 150px;
+$tryitout-module-pdg: 150px;

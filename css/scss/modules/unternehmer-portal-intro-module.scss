@@ -6,11 +6,8 @@
     background-image: $up-intro-bg-img;
     background-size: cover;
 
-    .search-box {
-      height: 350px - (2*$intro-module-padding);
-      padding: $intro-module-padding;
-      background-color: rgba(255, 255, 255, 0.8);
-      width: 40%;
+    .light-txtbox-over-img {
+      height: 350px - (2*$light-txtbox-over-img-pdg);
 
       h2 {
         margin-bottom: 50px;

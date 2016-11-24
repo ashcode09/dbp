@@ -19,6 +19,12 @@ body {
     -webkit-padding-start: 0;
   }
 
+  .light-txtbox-over-img {
+    padding: $light-txtbox-over-img-pdg;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40%;
+  }
+
   .btn {
     border: none;
     height: $btn-height;
