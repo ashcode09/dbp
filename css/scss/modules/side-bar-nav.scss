@@ -1,0 +1,25 @@
+.side-bar-nav {
+  position: fixed;
+  top: 300px;
+  right: 10%;
+
+  ul {
+    text-align: center;
+
+    li.side-bar-btn {
+      cursor: pointer;
+      list-style: none;
+      height: $sidebarbtn-height;
+      width: $sidebarbtn-height;
+      margin: $sidebarbtn-height/2 auto;
+      background-color: $sidebarbtn-col;
+      border-radius: 100%;
+
+      &.active-module {
+        background-color: $active-sidebarbtn-col;
+        height: $active-sidebarbtn-height;
+        width: $active-sidebarbtn-height;
+      }
+    }
+  }
+}
