@@ -1,10 +1,8 @@
 .unternehmer-portal-view {
-  max-width: 100%;
-
   .key-features-module {
     padding: 40px 20px;
     background-color: $rock-blue;
-    color: white;
+    color: $white;
     text-align: center;
 
     h2 {
@@ -12,12 +10,17 @@
     }
 
     .key-feature {
-      display: inline-block;
+      display: inline-table;
       width: 42%;
       padding: 1.5%;
 
-      img {
-        height: 100px;
+      .feature-img {
+        padding: $feature-img-pdgtopbtm 0;
+        height: $feature-img-height + (2*$feature-img-pdgtopbtm);
+
+        span {
+          font-size: $feature-img-height;
+        }
       }
     }
 

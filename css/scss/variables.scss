@@ -39,8 +39,12 @@ $active-sidebarbtn-height: 14px;
 $active-sidebarbtn-col: #2282C1;
 
 // UnternehmerPortal Intro module
-$up-intro-bg-img: url('http://il6.picdn.net/shutterstock/videos/5206298/thumb/1.jpg');
+$up-intro-bg-img: url('../src/images/dbHomeHero.jpg');
 $intro-module-padding: 40px;
+
+// Key features module
+$feature-img-height: 80px;
+$feature-img-pdgtopbtm: 40px;
 
 // Product module
 $product-topbtm-padding: 40px;
@@ -52,7 +56,9 @@ $product-container-height: $product-title-height + $product-img-height + $produc
 
 // Try It Out module
 $tryitout-quotebox-height: 150px;
-$tryitout-module-pdg: 150px;
+$tryitout-module-pdgtop: 150px;
+$tryitout-module-pdgbtm: 200px;
+$tryitout-bg-img: url('../src/images/dbTestimonial.jpg');
 
 // Desktop and mobile styling widths
 $lg-screen-width: 1260px;
