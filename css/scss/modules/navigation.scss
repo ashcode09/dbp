@@ -1,6 +1,7 @@
 .navigation {
   background-color: $white;
   position: absolute;
+  top: $header-sm-height;
   left: -100%;
   -webkit-transition: left 300ms linear;
   -moz-transition: left 300ms linear;
@@ -15,14 +16,16 @@
   }
 
   @media (min-width: $md-screen-width) {
-    position: relative;
+    position: fixed;
     left: 0;
+    top: $header-md-height;
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
     transition: none;
     width: 100%;
+    height: $nav-md-height;
     margin-bottom: 5px;
 
     ul {
@@ -40,6 +43,8 @@
         font-weight: 300;
 
         &.left-navigation {
+          font-size: 18px;
+
           &.active-nav {
             color: $link-col;
             border: $nav-border-col $nav-border-width solid;
@@ -54,7 +59,15 @@
         }
 
         &.right-navigation {
+          padding-left: 10px;
+          padding-right: 10px;
           float: right;
+
+          .btn-primary {
+            height: 30px;
+            font-size: 100%;
+            padding: 0 10px;
+          }
         }
       }
     }

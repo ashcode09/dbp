@@ -14,7 +14,6 @@
     <a class="unselectable" onclick="openNav('navigation')">
         <span class="glyphicon glyphicon-menu-hamburger unselectable"></span>
     </a>
-
     <img src="src/images/dbLogo.png" class="logo">
 </div>
 
@@ -30,9 +29,16 @@
         <li class="left-navigation" id="tarifeNav" onclick="viewPage('tarife', this.id, 'navigation')">
             <span>Tarife</span>
         </li>
-        <li class="right-navigation">Registrieren</li>
+        <li class="right-navigation">
+            <button class="btn-primary">Login</button>
+        </li>
+        <li class="right-navigation">
+            <button class="btn-primary">Registrieren</button>
+        </li>
     </ul>
 </div>
+
+<div class="push-down"></div>
 
 <!-- viewPage('unternehmerPortal') -->
 <div class="page-view unternehmer-portal-view" id="unternehmerPortal">

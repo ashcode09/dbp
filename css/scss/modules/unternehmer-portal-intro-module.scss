@@ -2,16 +2,21 @@
   .intro-module {
     background-image: $up-intro-bg-img;
     background-size: cover;
+    margin-top: 3px;
     padding: 10px;
     padding-top: 50px;
     padding-bottom: 15px;
     text-align: center;
 
-    input {
-      width: 100%;
+    .light-txtbox-over-img {
+      padding: 15px;
 
-      &.input-textbox {
-        margin-bottom: 10px;
+      input {
+        width: 100%;
+
+        &.input-textbox {
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -22,7 +27,8 @@
       text-align: left;
 
       .light-txtbox-over-img {
-        height: 400px - (2*$light-txtbox-over-img-pdg);
+        width: 50%;
+        padding: 30px;
 
         h2 {
           margin-bottom: 50px;

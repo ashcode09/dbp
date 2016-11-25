@@ -14,23 +14,30 @@ $md-side-padding: 10%;
 $vertical-padding: 40px;
 $lg-padding: $vertical-padding $lg-side-padding;
 $md-padding: $vertical-padding $md-side-padding;
-$light-txtbox-over-img-pdg: 20px;
 
 // Body
 $link-col: $dodger-blue;
-$btn-height: 50px;
+$btn-height: 60px;
 
 // Header
 $logo-sm-height: 40px;
+$header-sm-pdg: 10px;
 $logo-md-height: 70px;
+$header-md-topbtm-mgn: 10px;
+$header-sm-height: $logo-sm-height + (2*$header-sm-pdg);
 $header-md-height: $logo-md-height;
 
 // Navigation bar
-$nav-border-width: 1px;
 $nav-border-col: $light-grey;
 $nav-bg-col: $white;
+$nav-border-width: 1px;
 $li-padding: 15px;
+$spacing-at-btm-of-navbar: 2px;
 $active-tab-border-btm-width: 3px;
+$nav-md-height: 2*($li-padding + $nav-border-width + $active-tab-border-btm-width) + 18px + $spacing-at-btm-of-navbar;
+
+// Header and navigation container
+$headernavcontainer-height: $header-md-height + $nav-md-height;
 
 // Side bar navigation buttons
 $sidebarbtn-height: 10px;

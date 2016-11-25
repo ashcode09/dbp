@@ -1,5 +1,9 @@
 .header {
+  height: $header-sm-height;
+  position: fixed;
+  width: 100%;
   padding: 10px;
+  background-color: $white;
 
   .glyphicon {
     font-size: 30px;
@@ -12,7 +16,8 @@
   }
 
   @media (min-width: $md-screen-width) {
-    margin: 10px 0px 0px;
+    height: $header-md-height;
+    margin: 0;
     padding: 0 $lg-side-padding;
     height: $header-md-height;
 

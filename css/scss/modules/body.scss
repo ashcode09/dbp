@@ -1,5 +1,6 @@
 
 body {
+  width: 100%;
   max-width: 100%;
   margin: 0;
   font-family: arial;
@@ -8,7 +9,7 @@ body {
   h2 {
     margin: 0;
     color: $smalt;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 200;
   }
 
@@ -25,11 +26,7 @@ body {
   }
 
   .light-txtbox-over-img {
-    padding: $light-txtbox-over-img-pdg;
     background-color: rgba(255, 255, 255, 0.9);
-    @media (min-width: $md-screen-width) {
-      width: 40%;
-    }
   }
 
   .btn {
@@ -43,7 +40,7 @@ body {
     background-color: $curious-blue;
     border-radius: 5px;
     color: $white;
-    font-size: 100%;
+    font-size: 20px;
   }
 
   .btn-secondary {
@@ -81,6 +78,10 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+
+  .push-down {
+    height: $headernavcontainer-height;
   }
 
 }

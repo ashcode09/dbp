@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   max-width: 100%;
   margin: 0;
   font-family: arial;
@@ -7,7 +8,7 @@ body {
 body h2 {
   margin: 0;
   color: #003399;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 200;
 }
 body ul {
@@ -21,24 +22,18 @@ body .line {
   width: 100%;
 }
 body .light-txtbox-over-img {
-  padding: 20px;
   background-color: rgba(255, 255, 255, 0.9);
-}
-@media (min-width: 960px) {
-  body .light-txtbox-over-img {
-    width: 40%;
-  }
 }
 body .btn, body .btn-primary, body .btn-secondary {
   border: none;
-  height: 50px;
+  height: 60px;
   padding: 10px 40px;
 }
 body .btn-primary {
   background-color: #2282C1;
   border-radius: 5px;
   color: white;
-  font-size: 100%;
+  font-size: 20px;
 }
 body .btn-secondary {
   background-color: white;
@@ -47,7 +42,7 @@ body .btn-secondary {
 }
 body .input-textbox {
   border: lightgrey 1px solid;
-  height: 50px;
+  height: 60px;
   box-sizing: border-box;
   padding: 0 10px;
   font-size: 20px;
@@ -70,9 +65,16 @@ body .unselectable {
   -ms-user-select: none;
   user-select: none;
 }
+body .push-down {
+  height: 128px;
+}
 
 .header {
+  height: 60px;
+  position: fixed;
+  width: 100%;
   padding: 10px;
+  background-color: white;
 }
 .header .glyphicon {
   font-size: 30px;
@@ -84,7 +86,8 @@ body .unselectable {
 }
 @media (min-width: 960px) {
   .header {
-    margin: 10px 0px 0px;
+    height: 70px;
+    margin: 0;
     padding: 0 20%;
     height: 70px;
   }
@@ -99,6 +102,7 @@ body .unselectable {
 .navigation {
   background-color: white;
   position: absolute;
+  top: 60px;
   left: -100%;
   -webkit-transition: left 300ms linear;
   -moz-transition: left 300ms linear;
@@ -113,14 +117,16 @@ body .unselectable {
 }
 @media (min-width: 960px) {
   .navigation {
-    position: relative;
+    position: fixed;
     left: 0;
+    top: 70px;
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
     transition: none;
     width: 100%;
+    height: 58px;
     margin-bottom: 5px;
   }
   .navigation ul {
@@ -137,6 +143,9 @@ body .unselectable {
     display: inline-block;
     font-weight: 300;
   }
+  .navigation ul li.left-navigation {
+    font-size: 18px;
+  }
   .navigation ul li.left-navigation.active-nav {
     color: #059CE5;
     border: lightgrey 1px solid;
@@ -148,22 +157,33 @@ body .unselectable {
     padding-bottom: 13px;
   }
   .navigation ul li.right-navigation {
+    padding-left: 10px;
+    padding-right: 10px;
     float: right;
+  }
+  .navigation ul li.right-navigation .btn-primary {
+    height: 30px;
+    font-size: 100%;
+    padding: 0 10px;
   }
 }
 
 .unternehmer-portal-view .intro-module {
   background-image: url("../src/images/dbHomeHero.jpg");
   background-size: cover;
+  margin-top: 3px;
   padding: 10px;
   padding-top: 50px;
   padding-bottom: 15px;
   text-align: center;
 }
-.unternehmer-portal-view .intro-module input {
+.unternehmer-portal-view .intro-module .light-txtbox-over-img {
+  padding: 15px;
+}
+.unternehmer-portal-view .intro-module .light-txtbox-over-img input {
   width: 100%;
 }
-.unternehmer-portal-view .intro-module input.input-textbox {
+.unternehmer-portal-view .intro-module .light-txtbox-over-img input.input-textbox {
   margin-bottom: 10px;
 }
 @media (min-width: 960px) {
@@ -174,7 +194,8 @@ body .unselectable {
     text-align: left;
   }
   .unternehmer-portal-view .intro-module .light-txtbox-over-img {
-    height: 360px;
+    width: 50%;
+    padding: 30px;
   }
   .unternehmer-portal-view .intro-module .light-txtbox-over-img h2 {
     margin-bottom: 50px;
@@ -261,7 +282,7 @@ body .unselectable {
   font-size: 15px;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container {
-  height: 50px;
+  height: 60px;
   margin-bottom: 15px;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
@@ -282,7 +303,7 @@ body .unselectable {
     width: 20%;
     margin: 0 1%;
     padding: 40px 2%;
-    height: 455px;
+    height: 465px;
   }
   .unternehmer-portal-view .products-module .product-box-container .product-container.planhq-product {
     background-color: #4F81BD;
