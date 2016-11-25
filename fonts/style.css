@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'db-icons';
+  src:  url('fonts/db-icons.eot?ppp51n');
+  src:  url('fonts/db-icons.eot?ppp51n#iefix') format('embedded-opentype'),
+    url('fonts/db-icons.ttf?ppp51n') format('truetype'),
+    url('fonts/db-icons.woff?ppp51n') format('woff'),
+    url('fonts/db-icons.svg?ppp51n#db-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="db-"], [class*=" db-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'db-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.db-ico1:before {
+  content: "\e900";
+}
+.db-ico2:before {
+  content: "\e901";
+}
+.db-ico3:before {
+  content: "\e902";
+}
+.db-ico4:before {
+  content: "\e903";
+}
+.db-ico5:before {
+  content: "\e904";
+}
+.db-ico6:before {
+  content: "\e905";
+}
+.db-ico7:before {
+  content: "\e906";
+}
+.db-ico8:before {
+  content: "\e907";
+}
+.db-ico9:before {
+  content: "\e908";
+}
+.db-ico10:before {
+  content: "\e909";
+}
+.db-ico11:before {
+  content: "\e90a";
+}
+.db-ico12:before {
+  content: "\e90b";
+}
+.db-ico13:before {
+  content: "\e90c";
+}
+.db-ico14:before {
+  content: "\e90d";
+}
+.db-ico15:before {
+  content: "\e90e";
+}
+.db-ico16:before {
+  content: "\e90f";
+}
+.db-ico17:before {
+  content: "\e910";
+}
+.db-ico18:before {
+  content: "\e911";
+}
+
