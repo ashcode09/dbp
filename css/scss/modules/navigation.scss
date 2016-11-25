@@ -1,38 +1,65 @@
 .navigation {
-  width: 100%;
-  margin-bottom: 5px;
+  background-color: $white;
+  position: absolute;
+  left: -100%;
+  -webkit-transition: left 300ms linear;
+  -moz-transition: left 300ms linear;
+  -ms-transition: left 300ms linear;
+  -o-transition: left 300ms linear;
+  transition: left 300ms linear;
+  width: 80%;
+  height: 100%;
 
-  ul {
-    padding: $lg-padding;
-    padding-bottom: 0;
-    padding-top: 0;
-    border-bottom: $nav-border-col $nav-border-width solid;
-    color: black;
+  &.open-nav {
+    left: 0;
+  }
 
-    li {
-      padding: $li-padding;
-      list-style: none;
-      cursor: pointer;
-      display: inline-block;
-      font-weight: 300;
+  @media (min-width: $md-screen-width) {
+    position: relative;
+    left: 0;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    width: 100%;
+    margin-bottom: 5px;
 
-      &.left-navigation {
-        &.active-nav {
-          color: $link-col;
-          border: $nav-border-col $nav-border-width solid;
-          border-bottom: $nav-bg-col $nav-border-width solid;
-          margin-bottom: -$nav-border-width;
+    ul {
+      padding: $lg-padding;
+      padding-bottom: 0;
+      padding-top: 0;
+      border-bottom: $nav-border-col $nav-border-width solid;
+      color: black;
 
-          span {
-            border-bottom: $link-col $active-tab-border-btm-width solid;
-            padding-bottom: $li-padding - $active-tab-border-btm-width + $nav-border-width;
+      li {
+        padding: $li-padding;
+        list-style: none;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 300;
+
+        &.left-navigation {
+          &.active-nav {
+            color: $link-col;
+            border: $nav-border-col $nav-border-width solid;
+            border-bottom: $nav-bg-col $nav-border-width solid;
+            margin-bottom: -$nav-border-width;
+
+            span {
+              border-bottom: $link-col $active-tab-border-btm-width solid;
+              padding-bottom: $li-padding - $active-tab-border-btm-width + $nav-border-width;
+            }
           }
         }
-      }
 
-      &.right-navigation {
-        float: right;
+        &.right-navigation {
+          float: right;
+        }
       }
     }
+  }
+
+  @media (min-width: $lg-screen-width) {
   }
 }

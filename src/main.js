@@ -4,10 +4,16 @@ var activePageAndTabAndSideBarBtn = {
     'activeSideBarBtn': null
 };
 
-function viewPage(idOfPageToView, idOfNavTabClicked) {
+var navIsOpen = false;
+
+function viewPage(idOfPageToView, idOfNavTabClicked, navigationId) {
     // view page and make tab active
     addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav')
     addClassById(idOfPageToView, 'activePageView', 'active-page-view');
+    if (navIsOpen) {
+        document.getElementById(navigationId).classList.remove('open-nav');
+        navIsOpen = false;
+    }
 };
 
 var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) {
@@ -16,6 +22,17 @@ var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) 
     }
     document.getElementById(idOfElementClicked).classList.add(classToAdd);
     activePageAndTabAndSideBarBtn[lastActiveElement] = idOfElementClicked;
+};
+
+
+var openNav = function (navigationId) {
+    if (navIsOpen) {
+        document.getElementById(navigationId).classList.remove('open-nav');
+        navIsOpen = false;
+    } else {
+        document.getElementById(navigationId).classList.add('open-nav');
+        navIsOpen = true;
+    }
 };
 var modulesToScrollTo = document.getElementsByClassName('side-nav-module');
 

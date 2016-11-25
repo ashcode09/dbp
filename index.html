@@ -10,20 +10,23 @@
 
 <!-- header -->
 <div class="header">
+    <a onclick="openNav('navigation')">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </a>
 
     <img class="logo">
 </div>
 
 <!-- navigation bar -->
-<div class="navigation">
+<div class="navigation" id="navigation">
     <ul>
-        <li class="left-navigation" id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id)">
+        <li class="left-navigation" id="unternehmerPortalNav" onclick="viewPage('unternehmerPortal', this.id, 'navigation')">
             <span>Start</span>
         </li>
-        <li class="left-navigation" id="anwendungenNav" onclick="viewPage('anwendungen', this.id)">
+        <li class="left-navigation" id="anwendungenNav" onclick="viewPage('anwendungen', this.id, 'navigation')">
             <span>Anwendungen</span>
         </li>
-        <li class="left-navigation" id="tarifeNav" onclick="viewPage('tarife', this.id)">
+        <li class="left-navigation" id="tarifeNav" onclick="viewPage('tarife', this.id, 'navigation')">
             <span>Tarife</span>
         </li>
         <li class="right-navigation">Registrieren</li>
