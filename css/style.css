@@ -64,6 +64,12 @@ body .page-view {
 body .page-view.active-page-view {
   display: block;
 }
+body .unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .header {
   padding: 10px;
@@ -71,6 +77,23 @@ body .page-view.active-page-view {
 .header .glyphicon {
   font-size: 30px;
   color: black;
+}
+.header .logo {
+  height: 40px;
+  float: right;
+}
+@media (min-width: 960px) {
+  .header {
+    margin: 10px 0px 0px;
+    padding: 0 20%;
+    height: 70px;
+  }
+  .header .glyphicon {
+    display: none;
+  }
+  .header .logo {
+    height: 70px;
+  }
 }
 
 .navigation {

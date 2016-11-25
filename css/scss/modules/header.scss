@@ -1,8 +1,27 @@
 .header {
   padding: 10px;
-  
+
   .glyphicon {
     font-size: 30px;
     color: black;
+  }
+
+  .logo {
+    height: $logo-sm-height;
+    float: right;
+  }
+
+  @media (min-width: $md-screen-width) {
+    margin: 10px 0px 0px;
+    padding: 0 $lg-side-padding;
+    height: $header-md-height;
+
+    .glyphicon {
+      display: none;
+    }
+
+    .logo {
+      height: $logo-md-height;
+    }
   }
 }
