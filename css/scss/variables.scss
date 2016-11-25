@@ -43,7 +43,7 @@ $product-title-height: 75px;
 $product-img-height: 125px;
 $product-desc-height: 125px;
 $product-btn-height: $btn-height;
-$product-container-height: $product-title-height + $product-img-height + $product-desc-height + $product-btn-height;
+$product-container-height: $product-title-height + $product-img-height + $product-desc-height + $product-btn-height + (2*$product-topbtm-padding);
 
 // Try It Out module
 $tryitout-quotebox-height: 150px;

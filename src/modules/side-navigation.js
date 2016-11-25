@@ -9,8 +9,6 @@ var activeSideBarButton = function (buttonId) {
 var smoothScrollTo = function(targetId, buttonId) {
     activeSideBarButton(buttonId);
     
-    console.log(targetId)
-
     var element = document.querySelector('body');
     var target = document.getElementById(targetId).offsetTop;
     var duration = 600;
@@ -28,15 +26,11 @@ var smoothScrollTo = function(targetId, buttonId) {
         return Promise.resolve();
     }
 
-    console.log('body scrolltop', element.scrollTop)
-
     var start_time = Date.now();
     var end_time = start_time + duration;
-
     var start_top = element.scrollTop;
     var distance = target - start_top;
 
-    // based on http://en.wikipedia.org/wiki/Smoothstep
     var smooth_step = function(start, end, point) {
         if(point <= start) { return 0; }
         if(point >= end) { return 1; }

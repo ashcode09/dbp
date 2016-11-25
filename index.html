@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
-<body onload="viewPage('unternehmerPortal', 'unternehmerPortalNav')">
+<body onload="viewPage('unternehmerPortal', 'unternehmerPortalNav'); activeSideBarButton('introModule');">
 
 <!-- header -->
 <div class="header">
@@ -39,7 +39,7 @@
             <li id="keyFeatSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('keyFeaturesModule', this.id)"></li>
             <li id="videoSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('videoModule', this.id)"></li>
             <li id="productSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('productsModule', this.id)"></li>
-            <li id="pricingSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('pricingModule', this.id)"></li>
+            <li id="pricingSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('pricingPageModule', this.id)"></li>
             <li id="tryItSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('tryItOutModule', this.id)"></li>
             <li id="contactSidebarBtn" class="side-bar-btn" onclick="smoothScrollTo('contactModule', this.id)"></li>
         </ul>
@@ -113,7 +113,7 @@
                     <img src="" />
                 </div>
                 <div class="desc-container">
-                    <p>Mit PlanHQ erstellen Sie einen professionellen Geschäftsplan zur Realisierung Ihrer Ideen.</p>
+                    <p>Mit <strong>PlanHQ</strong> erstellen Sie einen professionellen Geschäftsplan zur Realisierung Ihrer Ideen.</p>
                 </div>
                 <div class="btn-container">
                     <a href="">
@@ -130,7 +130,7 @@
                     <img src="" />
                 </div>
                 <div class="desc-container">
-                    <p>Mit SizeUp vergleichen Sie Ihr Unternehmen mit denen Ihrer Wettbewerber.</p>
+                    <p>Mit <strong>SizeUp</strong> vergleichen Sie Ihr Unternehmen mit denen Ihrer Wettbewerber.</p>
                 </div>
                 <div class="btn-container">
                     <a href="">
@@ -147,7 +147,7 @@
                     <img src="" />
                 </div>
                 <div class="desc-container">
-                    <p>Mit CreditHQ rufen Sie schnell und einfach die Bonität Ihrer Geschäftspartner ab.</p>
+                    <p>Mit <strong>CreditHQ</strong> rufen Sie schnell und einfach die Bonität Ihrer Geschäftspartner ab.</p>
                 </div>
                 <div class="btn-container">
                     <a href="">
@@ -164,7 +164,7 @@
                     <img src="" />
                 </div>
                 <div class="desc-container">
-                    <p>Mit Export Enterprises lernen Sie Auslandsmärkte und deren Besonderheiten kennen.</p>
+                    <p>Mit <strong>Export Enterprises</strong> lernen Sie Auslandsmärkte und deren Besonderheiten kennen.</p>
                 </div>
                 <div class="btn-container">
                     <a href="">
@@ -373,7 +373,7 @@
 
 
 
-<div class="side-nav-module pricing-module" id="pricingModule">
+<div class="side-nav-module pricing-module" id="pricingPageModule">
     <h2>Kunden der Deutschen Bank können das UnternehmerPortal kostenfrei nutzen.</h2>
     <p class="desc-line">Nichtkunden steht das UnternehmerPortal bereits ab 8 Euro monatlich zur Verfügung.</p>
     <a href="">

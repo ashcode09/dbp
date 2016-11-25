@@ -1,4 +1,5 @@
 .side-bar-nav {
+  display: none;
   position: fixed;
   top: 300px;
 
@@ -24,6 +25,7 @@
 
   @media (min-width: $md-screen-width) {
     right: $md-side-padding/2;
+    display: block;
   }
 
   @media (min-width: $lg-screen-width) {

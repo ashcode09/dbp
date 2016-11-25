@@ -223,10 +223,10 @@ body .page-view.active-page-view {
   }
   .unternehmer-portal-view .products-module .product-box-container .product-container {
     display: inline-block;
-    width: 16%;
+    width: 20%;
     margin: 0 1%;
-    padding: 40px 3%;
-    height: 375px;
+    padding: 40px 2%;
+    height: 455px;
   }
   .unternehmer-portal-view .products-module .product-box-container .product-container.planhq-product {
     background-color: #4F81BD;
@@ -243,6 +243,7 @@ body .page-view.active-page-view {
   .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
     border: 1px solid white;
     width: 100%;
+    padding: 0;
   }
 }
 @media (min-width: 1260px) {
@@ -329,6 +330,7 @@ body .page-view.active-page-view {
 }
 
 .side-bar-nav {
+  display: none;
   position: fixed;
   top: 300px;
 }
@@ -352,6 +354,7 @@ body .page-view.active-page-view {
 @media (min-width: 960px) {
   .side-bar-nav {
     right: 5%;
+    display: block;
   }
 }
 @media (min-width: 1260px) {
