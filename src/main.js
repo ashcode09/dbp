@@ -44,15 +44,17 @@ var activeSideBarButton = function (buttonId) {
 
 var smoothScrollTo = function(targetId, buttonId) {
     activeSideBarButton(buttonId);
+
+    var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
     
     var element = document.querySelector('body');
-    var target = document.getElementById(targetId).offsetTop;
+    var target = document.getElementById(targetId).offsetTop - headerAndNavHeight;
     var duration = 600;
 
     target = Math.round(target);
     duration = Math.round(duration);
 
-    console.log(target, duration, element.scrollTop)
+    console.log(headerAndNavHeight)
 
     if (duration < 0) {
         return Promise.reject("bad duration");
