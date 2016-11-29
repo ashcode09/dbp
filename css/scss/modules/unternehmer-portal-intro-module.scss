@@ -11,12 +11,13 @@
     .light-txtbox-over-img {
       padding: 15px;
 
-      input {
+      .input-textbox {
         width: 100%;
+        margin-bottom: 10px;
+      }
 
-        &.input-textbox {
-          margin-bottom: 10px;
-        }
+      .btn-primary {
+        width: 100%;
       }
     }
 
