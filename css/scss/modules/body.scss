@@ -85,7 +85,11 @@ body {
   }
 
   .push-down {
-    height: $headernavcontainer-height;
+    height: $headernavcontainer-sm-height;
+
+    @media (min-width: $md-screen-width) {
+      height: $headernavcontainer-height;
+    }
   }
 
   .quote {

@@ -38,6 +38,7 @@ $nav-md-height: 2*($li-padding + $nav-border-width + $active-tab-border-btm-widt
 
 // Header and navigation container
 $headernavcontainer-height: $header-md-height + $nav-md-height;
+$headernavcontainer-sm-height: $header-sm-height;
 
 // Side bar navigation buttons
 $sidebarbtn-height: 10px;
