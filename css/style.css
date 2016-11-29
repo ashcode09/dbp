@@ -5,6 +5,9 @@ body {
   font-family: arial;
   color: #666666;
 }
+body .covers-other-elements, body .main-header, body .navigation {
+  z-index: 999;
+}
 body h2 {
   margin: 0;
   color: #003399;
@@ -61,6 +64,18 @@ body .unselectable {
 }
 body .push-down {
   height: 128px;
+}
+body .quote, body .tryitout-module .light-txtbox-over-img .quote-container .quote1, .tryitout-module .light-txtbox-over-img .quote-container body .quote1, body .tryitout-module .light-txtbox-over-img .quote-container .quote2, .tryitout-module .light-txtbox-over-img .quote-container body .quote2 {
+  position: absolute;
+  color: #003399;
+  font-size: 35px;
+}
+body .rotate180, body .tryitout-module .light-txtbox-over-img .quote-container .quote2, .tryitout-module .light-txtbox-over-img .quote-container body .quote2 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .main-header {
@@ -311,6 +326,9 @@ body .push-down {
   .unternehmer-portal-view .products-module .product-box-container .product-container.export-enterprises-product {
     background-color: #7189B3;
   }
+  .unternehmer-portal-view .products-module .product-box-container .product-container .img-container img {
+    width: 100%;
+  }
   .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
     border: 1px solid white;
     width: 100%;
@@ -390,14 +408,24 @@ body .push-down {
   text-align: center;
 }
 .tryitout-module .light-txtbox-over-img {
+  width: 50%;
   padding: 40px;
 }
-.tryitout-module .light-txtbox-over-img .quote {
+.tryitout-module .light-txtbox-over-img .quote-container {
   height: 150px;
   font-size: 23px;
   font-weight: 100;
   margin: 40px;
   margin-bottom: 0;
+  position: relative;
+}
+.tryitout-module .light-txtbox-over-img .quote-container .quote1 {
+  top: -25px;
+  left: -25px;
+}
+.tryitout-module .light-txtbox-over-img .quote-container .quote2 {
+  bottom: 25px;
+  right: -25px;
 }
 
 .side-bar-nav {

@@ -78,6 +78,12 @@
             background-color: #7189B3;
           }
 
+          .img-container {
+            img {
+              width: 100%;
+            }
+          }
+
           .btn-container {
             .btn-secondary {
               border: 1px solid $white;
