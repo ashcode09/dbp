@@ -53,12 +53,6 @@ body .break {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-body .page-view {
-  display: none;
-}
-body .page-view.active-page-view {
-  display: block;
-}
 body .unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -69,32 +63,32 @@ body .push-down {
   height: 128px;
 }
 
-.header {
+.main-header {
   height: 60px;
   position: fixed;
   width: 100%;
   padding: 10px;
   background-color: white;
 }
-.header .glyphicon {
+.main-header .glyphicon {
   font-size: 30px;
   color: black;
 }
-.header .logo {
+.main-header .logo {
   height: 40px;
   float: right;
 }
 @media (min-width: 960px) {
-  .header {
+  .main-header {
     height: 70px;
     margin: 0;
     padding: 0 20%;
     height: 70px;
   }
-  .header .glyphicon {
+  .main-header .glyphicon {
     display: none;
   }
-  .header .logo {
+  .main-header .logo {
     height: 70px;
   }
 }

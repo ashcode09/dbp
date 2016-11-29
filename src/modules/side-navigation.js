@@ -83,3 +83,5 @@ var smoothScrollTo = function(targetId, buttonId) {
     });
     console.log('')
 }
+
+activeSideBarButton('introSidebarBtn');

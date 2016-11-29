@@ -1,15 +1,14 @@
 var activePageAndTabAndSideBarBtn = {
     'activeNavTab': null,
-    'activePageView': null,
     'activeSideBarBtn': null
 };
 
 var navIsOpen = false;
 
-function viewPage(idOfPageToView, idOfNavTabClicked, navigationId) {
+function viewPage(idOfNavTabClicked, navigationId) {
     // view page and make tab active
+    console.log(idOfNavTabClicked, navigationId)
     addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav')
-    addClassById(idOfPageToView, 'activePageView', 'active-page-view');
     if (navIsOpen) {
         document.getElementById(navigationId).classList.remove('open-nav');
         navIsOpen = false;
@@ -24,7 +23,6 @@ var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) 
     activePageAndTabAndSideBarBtn[lastActiveElement] = idOfElementClicked;
 };
 
-
 var openNav = function (navigationId) {
     if (navIsOpen) {
         document.getElementById(navigationId).classList.remove('open-nav');
@@ -34,3 +32,5 @@ var openNav = function (navigationId) {
         navIsOpen = true;
     }
 };
+
+viewPage(activeTab, 'navigation');

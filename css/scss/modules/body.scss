@@ -65,14 +65,6 @@ body {
     margin-bottom: 5px;
   }
 
-  .page-view {
-    display: none;
-
-    &.active-page-view {
-      display: block;
-    }
-  }
-
   .unselectable {
     -moz-user-select: none;
     -webkit-user-select: none;
