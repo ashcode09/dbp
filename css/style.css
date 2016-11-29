@@ -5,7 +5,7 @@ body {
   font-family: arial;
   color: #666666;
 }
-body .covers-other-elements, body .main-header, body .navigation {
+body .covers-other-elements, body .main-header, body .navigation, body .side-bar-nav {
   z-index: 998;
 }
 body h2 {
@@ -73,7 +73,7 @@ body .push-down {
 }
 @media (min-width: 960px) {
   body .push-down {
-    height: 128px;
+    height: 178px;
   }
 }
 body .quote, body .tryitout-module .light-txtbox-over-img .quote-container .quote1, .tryitout-module .light-txtbox-over-img .quote-container body .quote1, body .tryitout-module .light-txtbox-over-img .quote-container .quote2, .tryitout-module .light-txtbox-over-img .quote-container body .quote2 {
@@ -106,13 +106,29 @@ body .align-center {
 .main-header .logo {
   height: 40px;
   float: right;
+  margin-top: 20px;
+}
+.main-header .title {
+  height: 120px;
+  display: inline-table;
+}
+.main-header .title h3 {
+  font-size: 20px;
+  color: #003399;
+}
+.main-header .title h2 {
+  color: lightgrey;
+  display: inline-table;
+}
+.main-header .title h2 .portal {
+  color: #059CE5;
 }
 @media (min-width: 960px) {
   .main-header {
-    height: 70px;
+    height: 120px;
     margin: 0;
     padding: 0 20%;
-    height: 70px;
+    height: 120px;
   }
   .main-header .glyphicon {
     display: none;
@@ -142,7 +158,7 @@ body .align-center {
   .navigation {
     position: fixed;
     left: 0;
-    top: 70px;
+    top: 120px;
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
@@ -357,9 +373,18 @@ body .align-center {
 }
 
 .unternehmer-portal-view .video-module {
-  height: 500px;
+  z-index: 0;
+  position: relative;
+  height: 550px;
   background-image: url("../src/images/dbVideo.jpg");
   background-size: cover;
+  text-align: center;
+}
+.unternehmer-portal-view .video-module .play-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  height: 150px;
 }
 .unternehmer-portal-view .transparent-video-container {
   z-index: 999;
@@ -401,7 +426,7 @@ body .align-center {
 }
 .unternehmer-portal-view.anwendungen .container .product-row .icons {
   font-size: 45px;
-  color: #666666;
+  color: #9FB6CD;
 }
 .unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
   margin: 20px 10px;
