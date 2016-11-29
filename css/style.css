@@ -6,7 +6,7 @@ body {
   color: #666666;
 }
 body .covers-other-elements, body .main-header, body .navigation {
-  z-index: 999;
+  z-index: 998;
 }
 body h2 {
   margin: 0;
@@ -356,8 +356,32 @@ body .align-center {
   }
 }
 
-.unternehmer-portal-view .video-module video {
-  width: 100%;
+.unternehmer-portal-view .video-module {
+  height: 500px;
+  background-image: url("../src/images/dbVideo.jpg");
+  background-size: cover;
+}
+.unternehmer-portal-view .transparent-video-container {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(102, 102, 102, 0.5);
+  display: none;
+}
+.unternehmer-portal-view .transparent-video-container.open-video-container {
+  display: block;
+}
+.unternehmer-portal-view .white-video-box {
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+}
+.unternehmer-portal-view .white-video-box div.ytp-chrome-controls {
+  display: none !important;
 }
 
 .unternehmer-portal-view.anwendungen .intro-module {

@@ -133,10 +133,13 @@
         </div>
     </div>
 
-    <div class="side-nav-module video-module" id="videoModule">
-        <video poster="src/images/dbVideo.jpg" src="http://www.youtube.com/watch?v=bONeCoik1Ts">
+    <div class="side-nav-module video-module" id="videoModule" onclick="openVideoLightbox()">
+    </div>
 
-        </video>
+    <div id="videoContainer" class="transparent-video-container">
+        <div class="white-video-box">
+            <iframe id="iframe" width="854" height="480" src="https://www.youtube.com/embed/GVsfGqowvOk" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="side-nav-module products-module" id="productsModule">
@@ -211,7 +214,6 @@
             </div>
         </div>
     </div>
-
 </div>
 <!-- end of unternehmerPortal specific view -->
 
@@ -265,8 +267,8 @@
     <!--FOOTER TO BE REPLACED BY DEUTSCHEBANK OWN FOOTER CODE -->
 </div>
 
-<script src="node_modules/jquery/dist/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="src/main.js"></script>
 
 </body>
