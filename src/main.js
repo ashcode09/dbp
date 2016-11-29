@@ -34,7 +34,36 @@ var openNav = function (navigationId) {
 };
 
 viewPage(activeTab, 'navigation');
-var modulesToScrollTo = document.getElementsByClassName('side-nav-module');
+var sidebarModuleBtns = {
+    'modulesOffsetTop': {},
+    'modulesSideBarBtnsById': {}
+};
+var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
+var modulesToScrollTo = Array.prototype.slice.call(document.getElementsByClassName('side-nav-module'));
+var allSideBarBtns = Array.prototype.slice.call(document.getElementsByClassName('side-bar-btn'));
+for (var i=0; i<modulesToScrollTo.length; i++) {
+    var key = modulesToScrollTo[i].id;
+    sidebarModuleBtns.modulesOffsetTop[key] = document.getElementById(key).offsetTop;
+    sidebarModuleBtns.modulesSideBarBtnsById[key] = allSideBarBtns[i];
+}
+console.log(sidebarModuleBtns.modulesSideBarBtnsById)
+
+window.onscroll = function() {
+    for (var i=0; i<modulesToScrollTo.length; i++) {
+        var key = modulesToScrollTo[i].id;
+        if (sidebarModuleBtns.modulesOffsetTop[key] <= document.querySelector('body').scrollTop) {
+            console.log(sidebarModuleBtns.modulesSideBarBtnsById[key].id)
+            var idOfActiveSidebarBtn = sidebarModuleBtns.modulesSideBarBtnsById[key].id;
+            activeSideBarButton(idOfActiveSidebarBtn)
+        }
+    }
+};
+
+
+
+
+
+
 
 var activeSideBarButton = function (buttonId) {
     console.log(buttonId);
@@ -44,8 +73,6 @@ var activeSideBarButton = function (buttonId) {
 
 var smoothScrollTo = function(targetId, buttonId) {
     activeSideBarButton(buttonId);
-
-    var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
     
     var element = document.querySelector('body');
     var target = document.getElementById(targetId).offsetTop - headerAndNavHeight;
