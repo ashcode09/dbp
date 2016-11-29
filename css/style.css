@@ -365,6 +365,12 @@ body .align-center {
 }
 .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module {
   margin-top: -84px;
+  padding: 0;
+  width: 100%;
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
+  width: 60%;
+  margin: 0 auto;
 }
 .unternehmer-portal-view.anwendungen .container .product-row {
   padding: 30px 0;
@@ -510,6 +516,10 @@ body .align-center {
   .side-bar-nav {
     right: 10%;
   }
+}
+
+.footer img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

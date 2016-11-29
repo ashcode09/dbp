@@ -9,6 +9,13 @@
         .container {
             &.anwendungen-tabs-module {
                 margin-top: -84px;
+                padding: 0;
+                width: 100%;
+
+                .nav {
+                    width: 60%;
+                    margin: 0 auto;
+                }
             }
 
             .product-row {
