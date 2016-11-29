@@ -1,8 +1,18 @@
 .unternehmer-portal-view {
   .video-module {
-    height: 500px;
+    z-index: 0;
+    position: relative;
+    height: $height-of-video-module;
     background-image: url('../src/images/dbVideo.jpg');
     background-size: cover;
+    text-align: center;
+
+    .play-btn {
+      cursor: pointer;
+      position: absolute;
+      top: $placement-of-play-btn;
+      height: $height-of-playbtn;
+    }
   }
 
   .transparent-video-container {

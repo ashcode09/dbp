@@ -55,6 +55,11 @@ $intro-module-padding: 40px;
 $feature-img-height: 80px;
 $feature-img-pdgtopbtm: 40px;
 
+// Video module
+$height-of-video-module: 550px;
+$height-of-playbtn: 150px;
+$placement-of-play-btn: ($height-of-video-module - $height-of-playbtn)/2;
+
 // Product module
 $product-topbtm-padding: 40px;
 $product-title-height: 75px;
