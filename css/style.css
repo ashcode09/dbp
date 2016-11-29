@@ -38,10 +38,16 @@ body .btn-primary {
   color: white;
   font-size: 20px;
 }
+body .btn-primary .db-ico7 {
+  font-size: 16px;
+}
 body .btn-secondary {
   background-color: white;
   color: #059CE5;
   font-size: 15px;
+}
+body .btn-secondary .db-ico7 {
+  font-size: 13px;
 }
 body .input-textbox {
   border: lightgrey 1px solid;
@@ -63,7 +69,12 @@ body .unselectable {
   user-select: none;
 }
 body .push-down {
-  height: 128px;
+  height: 60px;
+}
+@media (min-width: 960px) {
+  body .push-down {
+    height: 128px;
+  }
 }
 body .quote, body .tryitout-module .light-txtbox-over-img .quote-container .quote1, .tryitout-module .light-txtbox-over-img .quote-container body .quote1, body .tryitout-module .light-txtbox-over-img .quote-container .quote2, .tryitout-module .light-txtbox-over-img .quote-container body .quote2 {
   position: absolute;
@@ -76,6 +87,9 @@ body .rotate180, body .tryitout-module .light-txtbox-over-img .quote-container .
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+body .align-center {
+  text-align: center;
 }
 
 .main-header {
@@ -189,11 +203,12 @@ body .rotate180, body .tryitout-module .light-txtbox-over-img .quote-container .
 .unternehmer-portal-view .intro-module .light-txtbox-over-img {
   padding: 15px;
 }
-.unternehmer-portal-view .intro-module .light-txtbox-over-img input {
+.unternehmer-portal-view .intro-module .light-txtbox-over-img .input-textbox {
   width: 100%;
-}
-.unternehmer-portal-view .intro-module .light-txtbox-over-img input.input-textbox {
   margin-bottom: 10px;
+}
+.unternehmer-portal-view .intro-module .light-txtbox-over-img .btn-primary {
+  width: 100%;
 }
 @media (min-width: 960px) {
   .unternehmer-portal-view .intro-module {
@@ -341,20 +356,48 @@ body .rotate180, body .tryitout-module .light-txtbox-over-img .quote-container .
   }
 }
 
-.unternehmer-portal-view .container.anwendungen-tabs-module {
+.unternehmer-portal-view .video-module video {
+  width: 100%;
+}
+
+.unternehmer-portal-view.anwendungen .intro-module {
+  background-image: url("../src/images/dbProdHero.jpg");
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module {
   margin-top: -84px;
 }
-.unternehmer-portal-view .anwendungen-tabs-module ul {
+.unternehmer-portal-view.anwendungen .container .product-row {
+  padding: 30px 0;
+}
+.unternehmer-portal-view.anwendungen .container .product-row .icons {
+  font-size: 45px;
+  color: #666666;
+}
+.unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
+  margin: 20px 10px;
+  color: #003399;
+}
+.unternehmer-portal-view.anwendungen .container .product-row img.screenimg {
+  height: 300px;
+}
+.unternehmer-portal-view.anwendungen .container .product-row img.productimg {
+  padding: 20px 0;
+}
+.unternehmer-portal-view.anwendungen .container .product-row .desc-line {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul {
   width: 100%;
   background-color: white;
-  border-top: solid 1px #666666;
-  border-bottom: solid 1px #666666;
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
 }
-.unternehmer-portal-view .anwendungen-tabs-module ul li {
+.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li {
   width: 25%;
   text-align: center;
 }
-.unternehmer-portal-view .anwendungen-tabs-module ul li a {
+.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a {
   font-size: 20px;
   font-weight: bold;
   border-radius: 0px;
@@ -363,15 +406,22 @@ body .rotate180, body .tryitout-module .light-txtbox-over-img .quote-container .
   padding-bottom: 20px;
   border: none;
 }
-.unternehmer-portal-view .anwendungen-tabs-module ul li a:focus, .unternehmer-portal-view .anwendungen-tabs-module ul li a:active, .unternehmer-portal-view .anwendungen-tabs-module ul li a:hover {
+.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a:focus, .unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a:active, .unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a:hover {
   background-color: white;
   border: none;
 }
-.unternehmer-portal-view .anwendungen-tabs-module ul li.active {
+.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li.active {
   border-bottom: 10px solid #059CE5;
 }
-.unternehmer-portal-view .anwendungen-tabs-module ul li.active a {
+.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li.active a {
   color: #059CE5;
+}
+.unternehmer-portal-view.anwendungen .pricing-module h3 {
+  color: #003399;
+}
+.unternehmer-portal-view.anwendungen .pricing-module .desc-line {
+  font-size: 18px;
+  padding: 0 18%;
 }
 
 .pricing-module {
