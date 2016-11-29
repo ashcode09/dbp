@@ -23,9 +23,10 @@ $btn-height: 60px;
 $logo-sm-height: 40px;
 $header-sm-pdg: 10px;
 $logo-md-height: 70px;
+$height-of-header-title-box: 120px;
 $header-md-topbtm-mgn: 10px;
 $header-sm-height: $logo-sm-height + (2*$header-sm-pdg);
-$header-md-height: $logo-md-height;
+$header-md-height: $height-of-header-title-box;
 
 // Navigation bar
 $nav-border-col: $light-grey;

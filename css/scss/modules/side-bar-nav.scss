@@ -1,4 +1,5 @@
 .side-bar-nav {
+  @extend .covers-other-elements;
   display: none;
   position: fixed;
   top: 300px;
