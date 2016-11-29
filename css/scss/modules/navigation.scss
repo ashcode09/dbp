@@ -1,4 +1,5 @@
 .navigation {
+  @extend .covers-other-elements;
   background-color: $white;
   position: absolute;
   top: $header-sm-height;
