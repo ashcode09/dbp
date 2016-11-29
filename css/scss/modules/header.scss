@@ -14,12 +14,11 @@
   .logo {
     height: $logo-sm-height;
     float: right;
-    margin-top: 20px;
   }
 
   .title {
+    display: none;
     height: 120px;
-    display: inline-table;
 
     h3 {
       font-size: 20px;
@@ -48,6 +47,11 @@
 
     .logo {
       height: $logo-md-height;
+      margin-top: 20px;
+    }
+
+    .title {
+      display: inline-table;
     }
   }
 }

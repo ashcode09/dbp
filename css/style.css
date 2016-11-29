@@ -106,11 +106,10 @@ body .align-center {
 .main-header .logo {
   height: 40px;
   float: right;
-  margin-top: 20px;
 }
 .main-header .title {
+  display: none;
   height: 120px;
-  display: inline-table;
 }
 .main-header .title h3 {
   font-size: 20px;
@@ -135,6 +134,10 @@ body .align-center {
   }
   .main-header .logo {
     height: 70px;
+    margin-top: 20px;
+  }
+  .main-header .title {
+    display: inline-table;
   }
 }
 
@@ -373,6 +376,7 @@ body .align-center {
 }
 
 .unternehmer-portal-view .video-module {
+  display: none;
   z-index: 0;
   position: relative;
   height: 550px;
@@ -385,6 +389,11 @@ body .align-center {
   position: absolute;
   top: 200px;
   height: 150px;
+}
+@media (min-width: 960px) {
+  .unternehmer-portal-view .video-module {
+    display: block;
+  }
 }
 .unternehmer-portal-view .transparent-video-container {
   z-index: 999;
@@ -505,32 +514,51 @@ body .align-center {
 }
 
 .tryitout-module {
-  padding: 40px 20%;
-  padding-top: 150px;
-  padding-bottom: 200px;
+  padding: 30px 10px;
   background-image: url("../src/images/dbTestimonial.jpg");
   background-size: cover;
   text-align: center;
 }
 .tryitout-module .light-txtbox-over-img {
-  width: 50%;
-  padding: 40px;
+  padding: 30px 10px;
+  width: 100%;
 }
 .tryitout-module .light-txtbox-over-img .quote-container {
-  height: 150px;
   font-size: 23px;
   font-weight: 100;
   margin: 40px;
-  margin-bottom: 0;
   position: relative;
 }
 .tryitout-module .light-txtbox-over-img .quote-container .quote1 {
-  top: -25px;
-  left: -25px;
+  top: -35px;
+  left: -35px;
 }
 .tryitout-module .light-txtbox-over-img .quote-container .quote2 {
-  bottom: 25px;
-  right: -25px;
+  bottom: -35px;
+  right: -35px;
+}
+@media (min-width: 960px) {
+  .tryitout-module {
+    padding: 40px 20%;
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  .tryitout-module .light-txtbox-over-img {
+    width: 50%;
+    padding: 40px;
+    margin-bottom: 0;
+  }
+  .tryitout-module .light-txtbox-over-img .quote-container {
+    height: 150px;
+  }
+  .tryitout-module .light-txtbox-over-img .quote-container .quote1 {
+    top: -25px;
+    left: -25px;
+  }
+  .tryitout-module .light-txtbox-over-img .quote-container .quote2 {
+    bottom: 25px;
+    right: -25px;
+  }
 }
 
 .side-bar-nav {
