@@ -7,14 +7,29 @@
   text-align: center;
 
   .light-txtbox-over-img {
+    width: 50%;
     padding: 40px;
 
-    .quote {
+    .quote-container {
       height: $tryitout-quotebox-height;
       font-size: 23px;
       font-weight: 100;
       margin: 40px;
       margin-bottom: 0;
+      position: relative;
+
+      .quote1 {
+        @extend .quote;
+        top: 10 - $quote-size;
+        left: 10 - $quote-size;
+      }
+
+      .quote2 {
+        @extend .quote;
+        @extend .rotate180;
+        bottom: $quote-size - 10;
+        right: 10 - $quote-size;
+      }
     }
   }
 }

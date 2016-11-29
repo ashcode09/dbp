@@ -76,4 +76,18 @@ body {
     height: $headernavcontainer-height;
   }
 
+  .quote {
+    position: absolute;
+    color: $smalt;
+    font-size: 35px;
+  }
+
+  .rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
 }
