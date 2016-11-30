@@ -20,6 +20,22 @@ body {
     }
   }
 
+  .show-in-desktop {
+    display: none;
+
+    @media (min-width: $md-screen-width) {
+      display: block;
+    }
+  }
+
+  .show-in-mobile {
+    display: block;
+
+    @media (min-width: $md-screen-width) {
+      display: none;
+    }
+  }
+
   ul {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;

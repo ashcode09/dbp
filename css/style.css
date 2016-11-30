@@ -19,6 +19,22 @@ body h2 {
     font-size: 35px;
   }
 }
+body .show-in-desktop {
+  display: none;
+}
+@media (min-width: 960px) {
+  body .show-in-desktop {
+    display: block;
+  }
+}
+body .show-in-mobile {
+  display: block;
+}
+@media (min-width: 960px) {
+  body .show-in-mobile {
+    display: none;
+  }
+}
 body ul {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -343,7 +359,8 @@ body .align-center {
   margin-top: 25px;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .title-container {
-  height: 75px;
+  height: inherit;
+  margin: 15px 0;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .title-container h4 {
   font-size: 20px;
@@ -351,11 +368,17 @@ body .align-center {
   margin: 0;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .img-container {
-  height: 125px;
+  height: inherit;
+  margin: 15px 0;
+}
+.unternehmer-portal-view .products-module .product-box-container .product-container .img-container img {
+  width: 70%;
+  margin: 0 auto;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .desc-container {
-  height: 125px;
+  height: inherit;
   font-size: 15px;
+  margin: 15px 0;
 }
 .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container {
   height: 60px;
@@ -393,8 +416,20 @@ body .align-center {
   .unternehmer-portal-view .products-module .product-box-container .product-container.export-enterprises-product {
     background-color: #7189B3;
   }
+  .unternehmer-portal-view .products-module .product-box-container .product-container .title-container {
+    height: 75px;
+    margin: 0;
+  }
+  .unternehmer-portal-view .products-module .product-box-container .product-container .img-container {
+    height: 125px;
+    margin: 0;
+  }
   .unternehmer-portal-view .products-module .product-box-container .product-container .img-container img {
     width: 100%;
+  }
+  .unternehmer-portal-view .products-module .product-box-container .product-container .desc-container {
+    height: 125px;
+    margin: 0;
   }
   .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
     border: 1px solid white;

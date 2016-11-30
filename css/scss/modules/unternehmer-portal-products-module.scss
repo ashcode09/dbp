@@ -15,7 +15,8 @@
       .product-container {
 
         .title-container {
-          height: $product-title-height;
+          height: inherit;
+          margin: 15px 0;
 
           h4 {
             font-size: 20px;
@@ -25,12 +26,19 @@
         }
 
         .img-container {
-          height: $product-img-height;
+          height: inherit;
+          margin: 15px 0;
+
+          img {
+            width: 70%;
+            margin: 0 auto;
+          }
         }
 
         .desc-container {
-          height: $product-desc-height;
+          height: inherit;
           font-size: 15px;
+          margin: 15px 0;
         }
 
         .btn-container {
@@ -78,10 +86,23 @@
             background-color: #7189B3;
           }
 
+          .title-container {
+            height: $product-title-height;
+            margin: 0;
+          }
+
           .img-container {
+            height: $product-img-height;
+            margin: 0;
+
             img {
               width: 100%;
             }
+          }
+
+          .desc-container {
+            height: $product-desc-height;
+            margin: 0;
           }
 
           .btn-container {
