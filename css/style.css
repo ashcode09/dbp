@@ -8,6 +8,9 @@ body {
 body .covers-other-elements, body .main-header, body .navigation, body .side-bar-nav {
   z-index: 998;
 }
+body .clickable {
+  cursor: pointer;
+}
 body .page-view {
   display: none;
 }
@@ -231,7 +234,7 @@ body .align-center {
     margin-bottom: 5px;
   }
   .navigation ul {
-    padding: 40px 20%;
+    padding: 40px 10%;
     padding-bottom: 0;
     padding-top: 0;
     border-bottom: lightgrey 1px solid;
@@ -265,6 +268,13 @@ body .align-center {
     height: 30px;
     font-size: 100%;
     padding: 0 10px;
+  }
+}
+@media (min-width: 1260px) {
+  .navigation ul {
+    padding: 40px 20%;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -544,6 +554,9 @@ body .align-center {
 .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li.active a {
   color: #059CE5;
 }
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .tab-content .product-img {
+  width: 100%;
+}
 .unternehmer-portal-view.anwendungen .container .product-row {
   padding: 15px 0;
 }
@@ -570,6 +583,18 @@ body .align-center {
   font-size: 18px;
   margin-bottom: 30px;
 }
+.unternehmer-portal-view.anwendungen .search-container {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+.unternehmer-portal-view.anwendungen .search-container .searchboxcontainer {
+  padding: 15px 0 30px;
+  display: none;
+}
+.unternehmer-portal-view.anwendungen .search-container .searchboxcontainer.open-search-box {
+  display: block;
+}
 .unternehmer-portal-view.anwendungen .pricing-module h3 {
   color: #003399;
 }
@@ -578,7 +603,7 @@ body .align-center {
 }
 @media (min-width: 960px) {
   .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
   }
   .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li {
@@ -591,6 +616,14 @@ body .align-center {
   }
   .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li.active {
     border-bottom: 10px solid #059CE5;
+  }
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .tab-content {
+    padding: 40px 10%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .tab-content .product-img {
+    width: 80%;
   }
   .unternehmer-portal-view.anwendungen .container .product-row {
     padding: 30px 0;
@@ -606,6 +639,19 @@ body .align-center {
   }
   .unternehmer-portal-view.anwendungen .pricing-module {
     padding: 0 18%;
+  }
+  .unternehmer-portal-view.anwendungen .pricing-module .desc-line {
+    padding: 0 15%;
+  }
+}
+@media (min-width: 1260px) {
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
+    width: 60%;
+  }
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .tab-content {
+    padding: 40px 20%;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 

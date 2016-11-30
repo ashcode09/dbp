@@ -9,6 +9,10 @@ body {
   .covers-other-elements {
     z-index: 998;
   }
+
+  .clickable {
+    cursor: pointer;
+  }
   
   .page-view {
     display: none;

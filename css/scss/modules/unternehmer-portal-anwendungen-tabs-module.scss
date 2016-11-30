@@ -42,6 +42,12 @@
                         }
                     }
                 }
+
+                .tab-content {
+                    .product-img {
+                        width: 100%;
+                    }
+                }
             }
 
             .product-row {
@@ -77,6 +83,21 @@
             }
         }
 
+        .search-container {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+
+            .searchboxcontainer {
+                padding: 15px 0 30px;
+                display: none;
+
+                &.open-search-box {
+                    display: block;
+                }
+            }
+        }
+
         .pricing-module {
             h3 {
                 color: $smalt;
@@ -91,7 +112,7 @@
             .container {
                 &.anwendungen-tabs-module {
                     .nav {
-                        width: 60%;
+                        width: 90%;
                         margin: 0 auto;
                     }
 
@@ -106,6 +127,16 @@
                             &.active {
                                 border-bottom: 10px solid $dodger-blue;
                             }
+                        }
+                    }
+
+                    .tab-content {
+                        padding: $md-padding;
+                        padding-bottom: 0;
+                        padding-top: 0;
+
+                        .product-img {
+                            width: 80%;
                         }
                     }
                 }
@@ -127,8 +158,34 @@
                 }
             }
 
+            .search-container {
+            }
+
             .pricing-module {
                 padding: 0 18%;
+
+                .desc-line {
+                    padding: 0 15%;
+                }
+            }
+        }
+
+        @media (min-width: $lg-screen-width) {
+            .container {
+                &.anwendungen-tabs-module {
+                    .nav {
+                        width: 60%;
+                    }
+
+                    .tab-content {
+                        padding: $lg-padding;
+                        padding-bottom: 0;
+                        padding-top: 0;
+                    }
+                }
+            }
+
+            .search-container {
             }
         }
     }

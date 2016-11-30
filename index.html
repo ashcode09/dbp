@@ -78,12 +78,10 @@
             <h2>Fundierte Daten. Bessere Entscheidungen.</h2>
             <p>Erkennen Sie das Potenzial Ihres Unternehmens.</p>
             <div>
-                <input type="text" class="input-textbox" placeholder="Ihre Branche"/>
+                <input id="searchText" type="text" class="input-textbox" placeholder="Ihre Branche"/>
             </div>
             <div>
-                <a href="/anwendungen">
-                    <button type="submit" class="btn-primary">kostenfrei testen <span class="db-ico7"></span></button>
-                </a>
+                <button type="submit" class="btn-primary" onclick="viewPage('anwendungen', 'anwendungenNav', 'navigation')">kostenfrei testen <span class="db-ico7"></span></button>
             </div>
         </div>
     </div>
@@ -132,9 +130,7 @@
         </div>
 
         <div>
-            <a href="/anwendungen">
-                <button class="btn-primary">kostenfrei testen <span class="db-ico7"></span></button>
-            </a>
+            <button class="btn-primary" onclick="viewPage('anwendungen', 'anwendungenNav', 'navigation')">kostenfrei testen <span class="db-ico7"></span></button>
         </div>
     </div>
 
@@ -241,6 +237,7 @@
 
 
 
+<!-- viewPage('anwendungen') -->
 <div class="page-view unternehmer-portal-view anwendungen" id="anwendungen">
 
     <div id="anwendungenIntroModule" class="intro-module">
@@ -265,36 +262,38 @@
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="UnternehmerStrategie">
                 <center>
-                    <img src="" alt="dbProdHero" />
-                    1
-                    <div>
-                        <button class="btn-primary">kostenfrei teseten <span class="db-ico7"></span></button>
-                    </div>
+                    <img class="product-img" src="src/images/ProdPlanHQIntroImage.png" alt="dbProdHero" />
                 </center>
             </div>
             <div role="tabpanel" class="tab-pane" id="UnternehmerMarkt">
                 <center>
-                    <img src="" alt="IMG COMING" />
-                    2
-                    <button>button</button>
+                    <img class="product-img" src="src/images/ProdSizeUpIntroImage.png" />
                 </center>
             </div>
             <div role="tabpanel" class="tab-pane" id="UnternehmerPartner">
                 <center>
-                    <img src="" alt="IMG COMING" />
-                    3
-                    <button>button</button>
+                    <img class="product-img" src="src/images/ProdCreditHQIntroImage.png" />
                 </center>
             </div>
             <div role="tabpanel" class="tab-pane" id="UnternehmerGlobal">
                 <center>
-                    <img src="" alt="IMG COMING" />
-                    4
-                    <button>button</button>
+                    <img class="product-img" src="src/images/ProdExportIntroImage.png" />
                 </center>
             </div>
         </div>
         <!-- end page '2' tab panes -->
+    </div>
+
+    <div class="search-container">
+        <p id="anwendungenStrategie" class="clickable" onclick="openSearchInputBox(this)">Bearbeiten <span class="db-ico9"></span></p>
+        <div id="strategieSearchBox" class="searchboxcontainer">
+            <p>Erkennen sie das marktpotenzial ihres unternehmens</p>
+            <input id="searchTextInsert" type="text" class="input-textbox" placeholder="Ihre Branche"/>
+            <button type="text" class="btn-primary">Jetzt entdecken <span class="db-ico9"></span></button>
+        </div>
+        <div>
+            <button class="btn-primary">kostenfrei teseten <span class="db-ico7"></span></button>
+        </div>
     </div>
 
     <div class="pricing-module" id="pricingModule">
@@ -421,7 +420,7 @@
         </div>
     </div>
 </div>
-
+<!-- end of anwendungen specific view -->
 
 
 
@@ -453,9 +452,7 @@
                 <span class="db-ico18 "></span>
             </div>
         </div>
-        <a href="/anwendungen">
-            <button class="btn-primary">kostenfrei testen <span class="db-ico7"></span></button>
-        </a>
+        <button class="btn-primary" onclick="viewPage('anwendungen', 'anwendungenNav', 'navigation')">kostenfrei testen <span class="db-ico7"></span></button>
     </div>
 </div>
 
@@ -463,8 +460,8 @@
     <h2>Starten Sie einen Chat mit uns.</h2>
     <p>Wir informieren Sie gern persönlich, wenn Sie mehr über das UnternehmerPortal erfahren möchten.</p>
     <form>
-        <input type="text" value="Ihre Branche" class="input-textbox" />
-        <input type="text" value="Ihre E-Mail-Adresse" class="input-textbox" />
+        <input type="text" placeholder="Ihre Branche" class="input-textbox" />
+        <input type="text" placeholder="Ihre E-Mail-Adresse" class="input-textbox" />
         <button type="submit" class="btn-primary">Absenden <span class="db-ico7"></span></button>
     </form>
 </div>
