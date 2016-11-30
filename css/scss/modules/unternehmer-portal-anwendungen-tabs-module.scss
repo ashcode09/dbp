@@ -87,14 +87,24 @@
             text-align: center;
             color: black;
             font-size: 20px;
+            padding: 15px 10px;
 
             .searchboxcontainer {
-                padding: 15px 0 30px;
+                padding-bottom: 15px;
                 display: none;
+
+                .input-textbox {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
 
                 &.open-search-box {
                     display: block;
                 }
+            }
+
+            .btn-primary {
+                width: 100%;
             }
         }
 
@@ -159,6 +169,16 @@
             }
 
             .search-container {
+                .searchboxcontainer {
+                    .input-textbox {
+                        width: inherit;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .btn-primary {
+                    width: inherit;
+                }
             }
 
             .pricing-module {

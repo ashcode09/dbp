@@ -587,13 +587,21 @@ body .align-center {
   text-align: center;
   color: black;
   font-size: 20px;
+  padding: 15px 10px;
 }
 .unternehmer-portal-view.anwendungen .search-container .searchboxcontainer {
-  padding: 15px 0 30px;
+  padding-bottom: 15px;
   display: none;
+}
+.unternehmer-portal-view.anwendungen .search-container .searchboxcontainer .input-textbox {
+  width: 100%;
+  margin-bottom: 10px;
 }
 .unternehmer-portal-view.anwendungen .search-container .searchboxcontainer.open-search-box {
   display: block;
+}
+.unternehmer-portal-view.anwendungen .search-container .btn-primary {
+  width: 100%;
 }
 .unternehmer-portal-view.anwendungen .pricing-module h3 {
   color: #003399;
@@ -636,6 +644,13 @@ body .align-center {
   }
   .unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
     margin: 20px 10px;
+  }
+  .unternehmer-portal-view.anwendungen .search-container .searchboxcontainer .input-textbox {
+    width: inherit;
+    margin-bottom: 0px;
+  }
+  .unternehmer-portal-view.anwendungen .search-container .btn-primary {
+    width: inherit;
   }
   .unternehmer-portal-view.anwendungen .pricing-module {
     padding: 0 18%;
