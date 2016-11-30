@@ -118,6 +118,16 @@
             }
         }
 
+        @media (min-width: $sm-screen-width) {
+            .container {
+                .product-row {
+                    img.screenimg {
+                        display: block;
+                    }
+                }
+            }
+        }
+
         @media (min-width: $md-screen-width) {
             .container {
                 &.anwendungen-tabs-module {

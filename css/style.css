@@ -23,7 +23,7 @@ body h2 {
   font-weight: 200;
   font-size: 28px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   body h2 {
     font-size: 35px;
   }
@@ -31,7 +31,7 @@ body h2 {
 body .show-in-desktop {
   display: none;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   body .show-in-desktop {
     display: block;
   }
@@ -39,7 +39,7 @@ body .show-in-desktop {
 body .show-in-mobile {
   display: block;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   body .show-in-mobile {
     display: none;
   }
@@ -101,7 +101,7 @@ body .unselectable {
 body .push-down {
   height: 60px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   body .push-down {
     height: 178px;
   }
@@ -152,7 +152,7 @@ body .align-center {
 .main-header .title h2 .portal {
   color: #059CE5;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .main-header {
     height: 120px;
     margin: 0;
@@ -206,7 +206,7 @@ body .align-center {
   list-style: none;
   padding: 10px 0;
 }
-@media (max-width: 961px) {
+@media (max-width: 1026px) {
   .navigation ul li.right-navigation:first-child {
     border-top: lightgrey 1px solid;
   }
@@ -219,7 +219,7 @@ body .align-center {
     height: inherit;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .navigation {
     position: fixed;
     left: 0;
@@ -297,7 +297,7 @@ body .align-center {
 .unternehmer-portal-view .intro-module .light-txtbox-over-img .btn-primary {
   width: 100%;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .unternehmer-portal-view .intro-module {
     padding: 40px 10%;
     padding-top: 40px;
@@ -346,7 +346,7 @@ body .align-center {
 .unternehmer-portal-view .key-features-module .key-feature .feature-img span {
   font-size: 80px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .unternehmer-portal-view .key-features-module {
     padding: 40px 10%;
   }
@@ -406,7 +406,7 @@ body .align-center {
 .unternehmer-portal-view .products-module .product-box-container .product-container .btn-container .btn-secondary {
   border: 1px solid #059CE5;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .unternehmer-portal-view .products-module {
     color: white;
     padding: 40px 10%;
@@ -513,7 +513,7 @@ body .align-center {
   max-height: 100%;
   max-width: 100%;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .unternehmer-portal-view .video-module {
     display: block;
   }
@@ -609,7 +609,12 @@ body .align-center {
 .unternehmer-portal-view.anwendungen .pricing-module .desc-line {
   font-size: 18px;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
+  .unternehmer-portal-view.anwendungen .container .product-row img.screenimg {
+    display: block;
+  }
+}
+@media (min-width: 1025px) {
   .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
     width: 90%;
     margin: 0 auto;
@@ -680,7 +685,7 @@ body .align-center {
 .pricing-module .desc-line {
   margin: 30px 0;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .pricing-module {
     padding: 40px 10%;
     padding-top: 40px;
@@ -719,7 +724,7 @@ body .align-center {
   bottom: -35px;
   right: -35px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .tryitout-module {
     padding: 40px 20%;
     padding-top: 150px;
@@ -765,7 +770,7 @@ body .align-center {
   height: 14px;
   width: 14px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .side-bar-nav {
     right: 5%;
     display: block;
@@ -793,7 +798,7 @@ body .align-center {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .contact-module {
     padding: 40px 10%;
     padding-top: 40px;
