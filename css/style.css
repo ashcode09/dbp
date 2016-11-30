@@ -489,7 +489,6 @@ body .align-center {
 }
 .unternehmer-portal-view.anwendungen .pricing-module .desc-line {
   font-size: 18px;
-  padding: 0 18%;
 }
 @media (min-width: 960px) {
   .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
@@ -515,6 +514,9 @@ body .align-center {
   }
   .unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
     margin: 20px 10px;
+  }
+  .unternehmer-portal-view.anwendungen .pricing-module {
+    padding: 0 18%;
   }
 }
 
@@ -622,6 +624,35 @@ body .align-center {
 @media (min-width: 1260px) {
   .side-bar-nav {
     right: 10%;
+  }
+}
+
+.contact-module {
+  padding: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact-module .input-textbox {
+  width: 100%;
+}
+.contact-module p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+@media (min-width: 960px) {
+  .contact-module {
+    padding: 40px 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact-module .input-textbox {
+    width: 30%;
+    margin-right: 2%;
+  }
+}
+@media (min-width: 1260px) {
+  .contact-module {
+    padding: 40px 20%;
   }
 }
 

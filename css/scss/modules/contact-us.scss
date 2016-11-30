@@ -1,0 +1,29 @@
+.contact-module {
+  padding: 40px 20px;
+  padding-top: $intro-module-padding;
+  padding-bottom: $intro-module-padding;
+
+  .input-textbox {
+    width: 100%;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $md-screen-width) {
+    padding: $md-padding;
+    padding-top: $intro-module-padding;
+    padding-bottom: $intro-module-padding;
+
+    .input-textbox {
+      width: 30%;
+      margin-right: 2%;
+    }
+  }
+
+  @media (min-width: $lg-screen-width) {
+    padding: $lg-padding;
+  }
+}
