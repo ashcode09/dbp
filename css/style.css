@@ -162,6 +162,35 @@ body .align-center {
 .navigation.open-nav {
   left: 0;
 }
+.navigation ul {
+  padding: 0 15px;
+}
+.navigation ul a {
+  color: black !important;
+}
+.navigation ul a:visited {
+  color: black;
+}
+.navigation ul a:hover {
+  color: black;
+}
+.navigation ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+@media (max-width: 961px) {
+  .navigation ul li.right-navigation:first-child {
+    border-top: lightgrey 1px solid;
+  }
+  .navigation ul li .btn-primary {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 0;
+    font-size: inherit;
+    height: inherit;
+  }
+}
 @media (min-width: 960px) {
   .navigation {
     position: fixed;
@@ -185,7 +214,6 @@ body .align-center {
   }
   .navigation ul li {
     padding: 15px;
-    list-style: none;
     cursor: pointer;
     display: inline-block;
     font-weight: 300;
