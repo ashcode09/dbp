@@ -13,13 +13,39 @@
                 width: 100%;
 
                 .nav {
-                    width: 60%;
-                    margin: 0 auto;
+                    width: 100%;
+                }
+
+                ul {
+                    width: 100%;
+                    background-color: $white;
+                    border-top: solid 1px $light-grey;
+                    border-bottom: solid 1px $light-grey;
+                    li {
+                        width: 100%;
+                        text-align: center;
+                        a {
+                            font-size: 16px;
+                            font-weight: bold;
+                            border-radius: 0px;
+                            color: $grey;
+                            border: none;
+                            &:focus, &:active, &:hover {
+                                background-color: $white;
+                                border: none;
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $dodger-blue;
+                            }
+                        }
+                    }
                 }
             }
 
             .product-row {
-                padding: 30px 0;
+                padding: 15px 0;
 
                 .icons {
                     font-size: 45px;
@@ -27,53 +53,26 @@
                 }
 
                 .icon-desc {
-                    margin: 20px 10px;
                     color: $smalt;
+                    word-break: break-word;
+                    margin: 0 -10px;
                 }
 
                 img.screenimg {
-                    height: 300px;
+                    display: none;
+                    max-height: 300px;
+                    max-width: 100%;
+                    margin-bottom: 25px;
                 }
 
                 img.productimg {
                     padding: 20px 0;
+                    height: 65px;
                 }
 
                 .desc-line {
                     font-size: 18px;
                     margin-bottom: 30px;
-                }
-            }
-        }
-
-        .anwendungen-tabs-module {
-            ul {
-                width: 100%;
-                background-color: $white;
-                border-top: solid 1px $light-grey;
-                border-bottom: solid 1px $light-grey;
-                li {
-                    width: 25%;
-                    text-align: center;
-                    a {
-                        font-size: 20px;
-                        font-weight: bold;
-                        border-radius: 0px;
-                        color: $grey;
-                        padding-top: 25px;
-                        padding-bottom: 20px;
-                        border: none;
-                        &:focus, &:active, &:hover {
-                            background-color: $white;
-                            border: none;
-                        }
-                    }
-                }
-                li.active {
-                    border-bottom: 10px solid $dodger-blue;
-                    a {
-                        color: $dodger-blue;
-                    }
                 }
             }
         }
@@ -86,6 +85,43 @@
             .desc-line {
                 font-size: 18px;
                 padding: 0 18%;
+            }
+        }
+
+        @media (min-width: $md-screen-width) {
+            .container {
+                &.anwendungen-tabs-module {
+                    .nav {
+                        width: 60%;
+                        margin: 0 auto;
+                    }
+
+                    ul {
+                        li {
+                            width: 25%;
+                            a {
+                                font-size: 20px;
+                                padding-top: 25px;
+                                padding-bottom: 20px;
+                            }
+                            &.active {
+                                border-bottom: 10px solid $dodger-blue;
+                            }
+                        }
+                    }
+                }
+
+                .product-row {
+                    padding: 30px 0;
+
+                    img.productimg {
+                        height: 100%;
+                    }
+
+                    .icon-desc {
+                        margin: 20px 10px;
+                    }
+                }
             }
         }
     }

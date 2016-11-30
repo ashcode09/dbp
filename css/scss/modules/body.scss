@@ -13,8 +13,11 @@ body {
   h2 {
     margin: 0;
     color: $smalt;
-    font-size: 35px;
     font-weight: 200;
+    font-size: 28px;
+    @media (min-width: $md-screen-width) {
+      font-size: 35px;
+    }
   }
 
   ul {

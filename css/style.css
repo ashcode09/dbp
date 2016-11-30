@@ -11,8 +11,13 @@ body .covers-other-elements, body .main-header, body .navigation, body .side-bar
 body h2 {
   margin: 0;
   color: #003399;
-  font-size: 35px;
   font-weight: 200;
+  font-size: 28px;
+}
+@media (min-width: 960px) {
+  body h2 {
+    font-size: 35px;
+  }
 }
 body ul {
   -webkit-margin-before: 0;
@@ -143,7 +148,7 @@ body .align-center {
 
 .navigation {
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 60px;
   left: -100%;
   -webkit-transition: left 300ms linear;
@@ -427,58 +432,57 @@ body .align-center {
   width: 100%;
 }
 .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul {
+  width: 100%;
+  background-color: white;
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li {
+  width: 100%;
+  text-align: center;
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px;
+  color: #666666;
+  border: none;
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li a:focus, .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li a:active, .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li a:hover {
+  background-color: white;
+  border: none;
+}
+.unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li.active a {
+  color: #059CE5;
 }
 .unternehmer-portal-view.anwendungen .container .product-row {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 .unternehmer-portal-view.anwendungen .container .product-row .icons {
   font-size: 45px;
   color: #9FB6CD;
 }
 .unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
-  margin: 20px 10px;
   color: #003399;
+  word-break: break-word;
+  margin: 0 -10px;
 }
 .unternehmer-portal-view.anwendungen .container .product-row img.screenimg {
-  height: 300px;
+  display: none;
+  max-height: 300px;
+  max-width: 100%;
+  margin-bottom: 25px;
 }
 .unternehmer-portal-view.anwendungen .container .product-row img.productimg {
   padding: 20px 0;
+  height: 65px;
 }
 .unternehmer-portal-view.anwendungen .container .product-row .desc-line {
   font-size: 18px;
   margin-bottom: 30px;
-}
-.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul {
-  width: 100%;
-  background-color: white;
-  border-top: solid 1px lightgrey;
-  border-bottom: solid 1px lightgrey;
-}
-.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li {
-  width: 25%;
-  text-align: center;
-}
-.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a {
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 0px;
-  color: #666666;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  border: none;
-}
-.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a:focus, .unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a:active, .unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li a:hover {
-  background-color: white;
-  border: none;
-}
-.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li.active {
-  border-bottom: 10px solid #059CE5;
-}
-.unternehmer-portal-view.anwendungen .anwendungen-tabs-module ul li.active a {
-  color: #059CE5;
 }
 .unternehmer-portal-view.anwendungen .pricing-module h3 {
   color: #003399;
@@ -486,6 +490,32 @@ body .align-center {
 .unternehmer-portal-view.anwendungen .pricing-module .desc-line {
   font-size: 18px;
   padding: 0 18%;
+}
+@media (min-width: 960px) {
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module .nav {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li {
+    width: 25%;
+  }
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li a {
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .unternehmer-portal-view.anwendungen .container.anwendungen-tabs-module ul li.active {
+    border-bottom: 10px solid #059CE5;
+  }
+  .unternehmer-portal-view.anwendungen .container .product-row {
+    padding: 30px 0;
+  }
+  .unternehmer-portal-view.anwendungen .container .product-row img.productimg {
+    height: 100%;
+  }
+  .unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
+    margin: 20px 10px;
+  }
 }
 
 .pricing-module {
