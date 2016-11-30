@@ -35,14 +35,16 @@
                 <span>Anwendungen</span>
             </li>
         </a>
-        <a href="/preise">
+        <a>
             <li class="left-navigation" id="tarifeNav">
                 <span>Tarife</span>
             </li>
         </a>
-        <li class="right-navigation">
-            <button class="btn-primary">Login</button>
-        </li>
+        <a href="/preise">
+            <li class="right-navigation">
+                <button class="btn-primary">Login</button>
+            </li>
+        </a>
         <li class="right-navigation">
             <button class="btn-primary">Registrieren</button>
         </li>
@@ -59,9 +61,6 @@
 
 
 
-<script>
-    var activeTab = 'anwendungenNav';
-</script>
 <div class="page-view unternehmer-portal-view anwendungen" id="anwendungen">
 
     <div id="anwendungenIntroModule" class="intro-module">
@@ -243,9 +242,7 @@
                 <img class="screenimg" src="src/images/dbExportVideoLink.jpg" alt="product 1 image" />
             </div>
         </div>
-
     </div>
-
 </div>
 
 
@@ -262,7 +259,7 @@
 
 
 
-<div class="pricing-module" id="pricingPageModule">
+<div class="side-nav-module pricing-module" id="pricingPageModule">
     <h2>Kunden der Deutschen Bank können das UnternehmerPortal kostenfrei nutzen.</h2>
     <p class="desc-line">Nichtkunden steht das UnternehmerPortal bereits ab 8 Euro monatlich zur Verfügung.</p>
     <a href="/preise">
@@ -271,7 +268,7 @@
     <p class="desc-line">*Voraussetzung ist der Besitz eines Deutsche Bank Geschäfts- oder Firmenkontos.</p>
 </div>
 
-<div class="tryitout-module" id="tryItOutModule">
+<div class="side-nav-module tryitout-module" id="tryItOutModule">
     <div class="light-txtbox-over-img">
         <div class="quote-container">
             <div class="quote1">
@@ -282,19 +279,19 @@
                 <span class="db-ico18 "></span>
             </div>
         </div>
-        <a href="">
+        <a href="/anwendungen">
             <button class="btn-primary">kostenfrei testen <span class="db-ico7"></span></button>
         </a>
     </div>
 </div>
 
 <div class="contact-module" id="contactModule">
-    <h2>Wuerden Sie gerne mit uns chatten?</h2>
-    <p>Wenn Sie mehr ueber uns erfahren moechten</p>
+    <h2>Starten Sie einen Chat mit uns.</h2>
+    <p>Wir informieren Sie gern persönlich, wenn Sie mehr über das UnternehmerPortal erfahren möchten.</p>
     <form>
-        <input type="text" value="YOUR SECTOR" />
-        <input type="text" value="YOUR EMAIL ADDRESS" />
-        <input type="submit" value="SUBMIT" />
+        <input type="text" value="Ihre Branche" class="input-textbox" />
+        <input type="text" value="Ihre E-Mail-Adresse" class="input-textbox" />
+        <button type="submit" class="btn-primary">Absenden <span class="db-ico7"></span></button>
     </form>
 </div>
 

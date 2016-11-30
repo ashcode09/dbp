@@ -1,11 +1,11 @@
-var videoContainerOpen = false;
 
-var openVideoLightbox = function() {
+
+var openVideoLightbox = function(videoContainerOpen, object) {
+    console.log(videoContainerOpen, object);
+
     if (!videoContainerOpen) {
         document.getElementById('videoContainer').classList.add('open-video-container');
-        videoContainerOpen = true;
     } else {
         document.getElementById('videoContainer').classList.remove('open-video-container');
-        videoContainerOpen = false;
     }
 };

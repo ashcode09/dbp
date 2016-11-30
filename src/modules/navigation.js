@@ -1,18 +1,20 @@
 var activePageAndTabAndSideBarBtn = {
     'activeNavTab': null,
-    'activeSideBarBtn': null
+    'activeSideBarBtn': null,
+    'activePageView': null
 };
 
 var navIsOpen = false;
 
-function viewPage(idOfNavTabClicked, navigationId) {
+function viewPage(idOfPageToView, idOfNavTabClicked, navigationId) {
     // view page and make tab active
-    console.log(idOfNavTabClicked, navigationId)
-    addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav')
+    addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav');
+    addClassById(idOfPageToView, 'activePageView', 'active-page-view');
     if (navIsOpen) {
         document.getElementById(navigationId).classList.remove('open-nav');
         navIsOpen = false;
     }
+    document.querySelector('body').scrollTop = 0;
 };
 
 var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) {
@@ -32,5 +34,3 @@ var openNav = function (navigationId) {
         navIsOpen = true;
     }
 };
-
-viewPage(activeTab, 'navigation');

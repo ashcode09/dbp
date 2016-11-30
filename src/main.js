@@ -1,18 +1,20 @@
 var activePageAndTabAndSideBarBtn = {
     'activeNavTab': null,
-    'activeSideBarBtn': null
+    'activeSideBarBtn': null,
+    'activePageView': null
 };
 
 var navIsOpen = false;
 
-function viewPage(idOfNavTabClicked, navigationId) {
+function viewPage(idOfPageToView, idOfNavTabClicked, navigationId) {
     // view page and make tab active
-    console.log(idOfNavTabClicked, navigationId)
-    addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav')
+    addClassById(idOfNavTabClicked, 'activeNavTab', 'active-nav');
+    addClassById(idOfPageToView, 'activePageView', 'active-page-view');
     if (navIsOpen) {
         document.getElementById(navigationId).classList.remove('open-nav');
         navIsOpen = false;
     }
+    document.querySelector('body').scrollTop = 0;
 };
 
 var addClassById = function (idOfElementClicked, lastActiveElement, classToAdd) {
@@ -32,8 +34,6 @@ var openNav = function (navigationId) {
         navIsOpen = true;
     }
 };
-
-viewPage(activeTab, 'navigation');
 var modulesToScrollTo = Array.prototype.slice.call(document.getElementsByClassName('side-nav-module'));
 
 if (modulesToScrollTo.length > 0) {
@@ -43,13 +43,19 @@ if (modulesToScrollTo.length > 0) {
     };
     var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
     var allSideBarBtns = Array.prototype.slice.call(document.getElementsByClassName('side-bar-btn'));
-    for (var i=0; i<modulesToScrollTo.length; i++) {
-        var key = modulesToScrollTo[i].id;
-        sidebarModuleBtns.modulesOffsetTop[key] = document.getElementById(key).offsetTop - 2*headerAndNavHeight;
-        sidebarModuleBtns.modulesSideBarBtnsById[key] = allSideBarBtns[i];
-    }
+
+    var findModulesOffsetTop = function () {
+        var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
+        var allSideBarBtns = Array.prototype.slice.call(document.getElementsByClassName('side-bar-btn'));
+        for (var i=0; i<modulesToScrollTo.length; i++) {
+            var key = modulesToScrollTo[i].id;
+            sidebarModuleBtns.modulesOffsetTop[key] = document.getElementById(key).offsetTop - 2*headerAndNavHeight;
+            sidebarModuleBtns.modulesSideBarBtnsById[key] = allSideBarBtns[i];
+        }
+    };
 
     window.onscroll = function() {
+        findModulesOffsetTop();
         for (var i=0; i<modulesToScrollTo.length; i++) {
             var key = modulesToScrollTo[i].id;
             if (sidebarModuleBtns.modulesOffsetTop[key] <= document.querySelector('body').scrollTop) {
@@ -68,8 +74,6 @@ if (modulesToScrollTo.length > 0) {
 }
 
 var smoothScrollTo = function(targetId, buttonId) {
-    activeSideBarButton(buttonId);
-
     var element = document.querySelector('body');
     var target = document.getElementById(targetId).offsetTop - headerAndNavHeight;
     var duration = 600;
@@ -139,14 +143,14 @@ var smoothScrollTo = function(targetId, buttonId) {
         setTimeout(scroll_frame, 0);
     });
 };
-var videoContainerOpen = false;
 
-var openVideoLightbox = function() {
+
+var openVideoLightbox = function(videoContainerOpen, object) {
+    console.log(videoContainerOpen, object);
+
     if (!videoContainerOpen) {
         document.getElementById('videoContainer').classList.add('open-video-container');
-        videoContainerOpen = true;
     } else {
         document.getElementById('videoContainer').classList.remove('open-video-container');
-        videoContainerOpen = false;
     }
 };

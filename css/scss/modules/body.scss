@@ -9,6 +9,14 @@ body {
   .covers-other-elements {
     z-index: 998;
   }
+  
+  .page-view {
+    display: none;
+    
+    &.active-page-view {
+      display: block;
+    }
+  }
 
   h2 {
     margin: 0;

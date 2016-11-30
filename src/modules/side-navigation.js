@@ -7,13 +7,19 @@ if (modulesToScrollTo.length > 0) {
     };
     var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
     var allSideBarBtns = Array.prototype.slice.call(document.getElementsByClassName('side-bar-btn'));
-    for (var i=0; i<modulesToScrollTo.length; i++) {
-        var key = modulesToScrollTo[i].id;
-        sidebarModuleBtns.modulesOffsetTop[key] = document.getElementById(key).offsetTop - 2*headerAndNavHeight;
-        sidebarModuleBtns.modulesSideBarBtnsById[key] = allSideBarBtns[i];
-    }
+
+    var findModulesOffsetTop = function () {
+        var headerAndNavHeight = document.getElementById('navigation').offsetHeight + document.getElementById('header').offsetHeight;
+        var allSideBarBtns = Array.prototype.slice.call(document.getElementsByClassName('side-bar-btn'));
+        for (var i=0; i<modulesToScrollTo.length; i++) {
+            var key = modulesToScrollTo[i].id;
+            sidebarModuleBtns.modulesOffsetTop[key] = document.getElementById(key).offsetTop - 2*headerAndNavHeight;
+            sidebarModuleBtns.modulesSideBarBtnsById[key] = allSideBarBtns[i];
+        }
+    };
 
     window.onscroll = function() {
+        findModulesOffsetTop();
         for (var i=0; i<modulesToScrollTo.length; i++) {
             var key = modulesToScrollTo[i].id;
             if (sidebarModuleBtns.modulesOffsetTop[key] <= document.querySelector('body').scrollTop) {
@@ -32,8 +38,6 @@ if (modulesToScrollTo.length > 0) {
 }
 
 var smoothScrollTo = function(targetId, buttonId) {
-    activeSideBarButton(buttonId);
-
     var element = document.querySelector('body');
     var target = document.getElementById(targetId).offsetTop - headerAndNavHeight;
     var duration = 600;

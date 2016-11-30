@@ -20,12 +20,15 @@
     padding: 0 15px;
 
     a {
+      text-decoration: none;
       color: black !important;
 
       &:visited {
+        text-decoration: none;
         color: black;
       }
       &:hover {
+        text-decoration: none;
         color: black;
       }
     }

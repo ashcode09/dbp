@@ -8,6 +8,12 @@ body {
 body .covers-other-elements, body .main-header, body .navigation, body .side-bar-nav {
   z-index: 998;
 }
+body .page-view {
+  display: none;
+}
+body .page-view.active-page-view {
+  display: block;
+}
 body h2 {
   margin: 0;
   color: #003399;
@@ -182,12 +188,15 @@ body .align-center {
   padding: 0 15px;
 }
 .navigation ul a {
+  text-decoration: none;
   color: black !important;
 }
 .navigation ul a:visited {
+  text-decoration: none;
   color: black;
 }
 .navigation ul a:hover {
+  text-decoration: none;
   color: black;
 }
 .navigation ul li {
@@ -445,6 +454,8 @@ body .align-center {
 
 .unternehmer-portal-view .video-module {
   display: none;
+}
+.unternehmer-portal-view .video-module .play-video-module {
   z-index: 0;
   position: relative;
   height: 550px;
@@ -452,18 +463,13 @@ body .align-center {
   background-size: cover;
   text-align: center;
 }
-.unternehmer-portal-view .video-module .play-btn {
+.unternehmer-portal-view .video-module .play-video-module .play-btn {
   cursor: pointer;
   position: absolute;
   top: 200px;
   height: 150px;
 }
-@media (min-width: 960px) {
-  .unternehmer-portal-view .video-module {
-    display: block;
-  }
-}
-.unternehmer-portal-view .transparent-video-container {
+.unternehmer-portal-view .video-module .transparent-video-container {
   z-index: 999;
   position: fixed;
   top: 0;
@@ -473,17 +479,34 @@ body .align-center {
   background-color: rgba(102, 102, 102, 0.5);
   display: none;
 }
-.unternehmer-portal-view .transparent-video-container.open-video-container {
+.unternehmer-portal-view .video-module .transparent-video-container.open-video-container {
   display: block;
 }
-.unternehmer-portal-view .white-video-box {
+.unternehmer-portal-view .video-module .white-video-box {
+  position: relative;
+  height: 80%;
   margin: 50px;
   padding: 50px;
   text-align: center;
   background-color: white;
 }
-.unternehmer-portal-view .white-video-box div.ytp-chrome-controls {
-  display: none !important;
+.unternehmer-portal-view .video-module .white-video-box .exit-lightbox {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.unternehmer-portal-view .video-module .white-video-box .exit-lightbox .glyphicon {
+  font-size: 20px;
+}
+.unternehmer-portal-view .video-module .white-video-box iframe {
+  max-height: 100%;
+  max-width: 100%;
+}
+@media (min-width: 960px) {
+  .unternehmer-portal-view .video-module {
+    display: block;
+  }
 }
 
 .unternehmer-portal-view.anwendungen .intro-module {
@@ -574,6 +597,9 @@ body .align-center {
   }
   .unternehmer-portal-view.anwendungen .container .product-row img.productimg {
     height: 100%;
+  }
+  .unternehmer-portal-view.anwendungen .container .product-row img.screenimg {
+    display: block;
   }
   .unternehmer-portal-view.anwendungen .container .product-row .icon-desc {
     margin: 20px 10px;
@@ -727,7 +753,7 @@ body .align-center {
   }
 }
 
-.footer img {
+.footer .replacement-footer-images {
   width: 100%;
 }
 

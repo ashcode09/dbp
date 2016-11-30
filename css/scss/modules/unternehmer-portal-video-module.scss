@@ -1,48 +1,65 @@
 .unternehmer-portal-view {
   .video-module {
     display: none;
-    z-index: 0;
-    position: relative;
-    height: $height-of-video-module;
-    background-image: url('../src/images/dbVideo.jpg');
-    background-size: cover;
-    text-align: center;
 
-    .play-btn {
-      cursor: pointer;
-      position: absolute;
-      top: $placement-of-play-btn;
-      height: $height-of-playbtn;
+    .play-video-module {
+      z-index: 0;
+      position: relative;
+      height: $height-of-video-module;
+      background-image: url('../src/images/dbVideo.jpg');
+      background-size: cover;
+      text-align: center;
+
+      .play-btn {
+        cursor: pointer;
+        position: absolute;
+        top: $placement-of-play-btn;
+        height: $height-of-playbtn;
+      }
+    }
+
+    .transparent-video-container {
+      z-index: 999;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(102, 102, 102, 0.5);
+      display: none;
+
+      &.open-video-container {
+        display: block;
+      }
+    }
+
+    .white-video-box {
+      position: relative;
+      height: 80%;
+      margin: 50px;
+      padding: 50px;
+      text-align: center;
+      background-color: $white;
+
+      .exit-lightbox {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        .glyphicon {
+          font-size: 20px;
+        }
+      }
+
+      iframe {
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
 
     @media (min-width: $md-screen-width) {
       display: block;
-    }
-  }
-
-  .transparent-video-container {
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(102, 102, 102, 0.5);
-    display: none;
-
-    &.open-video-container {
-      display: block;
-    }
-  }
-
-  .white-video-box {
-    margin: 50px;
-    padding: 50px;
-    text-align: center;
-    background-color: $white;
-
-    div.ytp-chrome-controls {
-      display: none !important;
     }
   }
 }
