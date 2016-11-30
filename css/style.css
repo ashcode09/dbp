@@ -634,6 +634,10 @@ body .align-center {
 }
 .contact-module .input-textbox {
   width: 100%;
+  margin-bottom: 10px;
+}
+.contact-module .btn-primary {
+  width: 100%;
 }
 .contact-module p {
   margin-top: 10px;
@@ -647,7 +651,11 @@ body .align-center {
   }
   .contact-module .input-textbox {
     width: 30%;
+    margin: 0;
     margin-right: 2%;
+  }
+  .contact-module .btn-primary {
+    width: 30%;
   }
 }
 @media (min-width: 1260px) {

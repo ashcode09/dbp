@@ -5,6 +5,11 @@
 
   .input-textbox {
     width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
   }
 
   p {
@@ -19,7 +24,12 @@
 
     .input-textbox {
       width: 30%;
+      margin: 0;
       margin-right: 2%;
+    }
+
+    .btn-primary {
+      width: 30%
     }
   }
 
