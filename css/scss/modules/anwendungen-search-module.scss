@@ -1,0 +1,47 @@
+.unternehmer-portal-view {
+  &.anwendungen {
+    .search-container {
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      padding: 15px 10px;
+
+      .searchboxcontainer {
+        padding-bottom: 15px;
+        display: none;
+
+        .input-textbox {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        &.open-search-box {
+          display: block;
+        }
+      }
+
+      .btn-primary {
+        width: 100%;
+      }
+
+      @media (min-width: $md-screen-width) {
+        padding: 0 $md-side-padding;
+
+        .searchboxcontainer {
+          .input-textbox {
+            width: inherit;
+            margin-bottom: 0px;
+          }
+        }
+
+        .btn-primary {
+          width: inherit;
+        }
+      }
+
+      @media (min-width: $lg-screen-width) {
+        padding: 0 $lg-side-padding;
+      }
+    }
+  }
+}

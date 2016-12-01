@@ -1,0 +1,78 @@
+.unternehmer-portal-view {
+    &.anwendungen {
+        .container {
+            width: inherit;
+            padding-left: 0;
+            padding-right: 0;
+
+            &.anwendungen-tabs-module {
+                margin-top: -84px;
+
+                .nav {
+                    width: 100%;
+                }
+
+                ul {
+                    width: 100%;
+                    background-color: $white;
+                    border-top: solid 1px $light-grey;
+                    border-bottom: solid 1px $light-grey;
+                    li {
+                        width: 100%;
+                        text-align: center;
+                        a {
+                            font-size: 16px;
+                            font-weight: bold;
+                            border-radius: 0px;
+                            color: $grey;
+                            border: none;
+                            &:focus, &:active, &:hover {
+                                background-color: $white;
+                                border: none;
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $dodger-blue;
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    .product-img {
+                        width: 100%;
+                    }
+                }
+
+                @media (min-width: $md-screen-width) {
+                    padding: 0 $md-side-padding;
+
+                    ul {
+                        li {
+                            width: 25%;
+                            a {
+                                font-size: 20px;
+                                padding-top: 25px;
+                                padding-bottom: 20px;
+                            }
+                            &.active {
+                                border-bottom: 10px solid $dodger-blue;
+                            }
+                        }
+                    }
+
+                    .tab-content {
+                        .product-img {
+                            width: 100% - $md-side-padding;
+                        }
+                    }
+                }
+
+                @media (min-width: $lg-screen-width) {
+                    padding: 0 $lg-side-padding;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.unternehmer-portal-view {
+  &.anwendungen {
+    .product-row {
+      padding: 15px 0;
+
+      .icons {
+        font-size: 45px;
+        color: $rock-blue;
+      }
+
+      .icon-desc {
+        color: $smalt;
+        word-break: break-word;
+        margin: 0 -10px;
+      }
+
+      img.screenimg {
+        display: none;
+        max-height: 300px;
+        max-width: 100%;
+        margin-bottom: 25px;
+      }
+
+      img.productimg {
+        padding: 20px 0;
+        height: 65px;
+      }
+
+      .desc-line {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: $sm-screen-width) {
+        img.screenimg {
+          display: block;
+        }
+      }
+
+      @media (min-width: $md-screen-width) {
+        padding: 30px $md-side-padding;
+
+        img.productimg {
+          height: 100%;
+        }
+
+        img.screenimg {
+          display: block;
+        }
+
+        .icon-desc {
+          margin: 20px 10px;
+        }
+      }
+
+      @media (min-width: $lg-screen-width) {
+        padding: 30px $lg-side-padding;
+      }
+    }
+  }
+}

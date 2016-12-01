@@ -9,7 +9,7 @@
   -ms-transition: left 300ms linear;
   -o-transition: left 300ms linear;
   transition: left 300ms linear;
-  width: 80%;
+  width: 100% - $lg-side-padding;
   height: 100%;
 
   &.open-nav {
@@ -103,8 +103,9 @@
 
           .btn-primary {
             height: 30px;
+            width: 120px;
             font-size: 100%;
-            padding: 0 10px;
+            padding: 0;
           }
         }
       }

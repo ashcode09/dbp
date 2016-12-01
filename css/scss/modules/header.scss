@@ -28,6 +28,7 @@
     h2 {
       color: $light-grey;
       display: inline-table;
+      padding: 10px 0 0;
 
       .portal {
         color: $dodger-blue;
@@ -38,8 +39,7 @@
   @media (min-width: $md-screen-width) {
     height: $header-md-height;
     margin: 0;
-    padding: 0 $lg-side-padding;
-    height: $header-md-height;
+    padding: 0 $md-side-padding;
 
     .glyphicon {
       display: none;
@@ -53,5 +53,9 @@
     .title {
       display: inline-table;
     }
+  }
+
+  @media (min-width: $lg-screen-width) {
+    padding: 0 $lg-side-padding;
   }
 }

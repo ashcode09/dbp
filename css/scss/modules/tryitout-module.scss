@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $md-screen-width) {
-    padding: $lg-padding;
+    padding: $md-padding;
     padding-top: $tryitout-module-pdgtop;
     padding-bottom: $tryitout-module-pdgbtm;
 
@@ -53,5 +53,9 @@
         }
       }
     }
+  }
+
+  @media (min-width: $lg-screen-width) {
+    padding: $lg-padding;
   }
 }
