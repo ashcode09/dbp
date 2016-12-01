@@ -2,7 +2,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  font-family: arial;
+  font-family: 'Roboto', sans-serif;
   color: #666666;
 }
 body .covers-other-elements, body .main-header, body .navigation, body .side-bar-nav {
