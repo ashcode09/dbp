@@ -14,7 +14,7 @@ but wasn't in the end.
 Screenshots
 -----------
 
-![Image](./src/screenshots/db-home-1.png?raw=true)
+![Image](https://bitbucket.org/ashleighmaundcode/db-homepage/src/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-1.PNG)
 :::
 ![Image](src/screenshots/db-home-1.png?raw=true)
 :::
