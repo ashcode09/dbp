@@ -15,11 +15,13 @@ Screenshots
 -----------
 
 ![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-1.PNG)
-:::
-![Image](src/screenshots/db-home-1.png?raw=true)
-:::
-[logo]: https://bitbucket.org/ashleighmaundcode/db-homepage/src/screenshots/db-home-1.png "Homepage view"
-:::
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-2.PNG)
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-3.PNG)
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-4.PNG)
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-5.PNG)
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-6.PNG)
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-home-7.PNG)
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/43bd9dba7fa065e8f1b2ac17b1ddedadb93c57af/src/screenshots/db-footer.PNG)
 
 Set Up Locally
 --------------
