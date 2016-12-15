@@ -9,10 +9,15 @@ vanilla javascript, with a colleague later including Bootstrap and JQuery librar
 the 'anwendungen' page. A mobile design was also included, so both page is therefore responsive.
 
 For both desktop and mobile views, the footer is an image, as the HTML for the footer was meant to be provided by DB
-but wasn't in the end.
+but wasn't in the end. Some of the 'videos' are just images as the videos were not available at the time of development.
 
-Screenshots
------------
+Home Page
+---------
+
+![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/869d46d6ed9a7428f5206e8add37fa78ce5e8dca/src/screenshots/db-home-view.PNG)
+
+Anwendungen Page
+----------------
 
 ![Image](https://bytebucket.org/ashleighmaundcode/db-homepage/raw/869d46d6ed9a7428f5206e8add37fa78ce5e8dca/src/screenshots/db-home-view.PNG)
 
