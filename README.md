@@ -14,9 +14,9 @@ but wasn't in the end.
 Screenshots
 -----------
 
-![Image](./src/screenshots/db-home-1.pngraw=true)
+![Image](./src/screenshots/db-home-1.png?raw=true)
 :::
-![Image](src/screenshots/db-home-1.pngraw=true)
+![Image](src/screenshots/db-home-1.png?raw=true)
 :::
 [logo]: https://bitbucket.org/ashleighmaundcode/db-homepage/src/screenshots/db-home-1.png "Homepage view"
 :::
