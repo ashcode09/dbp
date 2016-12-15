@@ -11,6 +11,15 @@ the 'anwendungen' page. A mobile design was also included, so both page is there
 For both desktop and mobile views, the footer is an image, as the HTML for the footer was meant to be provided by DB
 but wasn't in the end.
 
+Screenshots
+-----------
+
+![Image](./src/screenshots/db-home-1.pngraw=true)
+:::
+![Image](src/screenshots/db-home-1.pngraw=true)
+:::
+[logo]: https://bitbucket.org/ashleighmaundcode/db-homepage/src/screenshots/db-home-1.png "Homepage view"
+:::
 
 Set Up Locally
 --------------
