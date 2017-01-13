@@ -4,12 +4,15 @@ DB Proposed Homepage Design
 Introduction
 ------------
 
+https://ashleigh-client-design-site.herokuapp.com/
+
 I have been given a design from our UX team to develop, which was initially done using HTML5, CSS3 (SASS), and
 vanilla javascript, with a colleague later including Bootstrap and JQuery libraries to help with the design of
 the 'anwendungen' page. A mobile design was also included, so both views are therefore responsive.
 
 For both desktop and mobile views, the footer is an image, as the HTML for the footer was meant to be provided by DB
-but wasn't in the end. Some of the 'videos' (on the 'anwendungen' page) are just images as the videos were not available at the time of development.
+but wasn't in the end. Some of the 'videos' (on the 'anwendungen' page) are just images as the videos were not
+available at the time of development.
 
 Set Up Locally
 --------------
